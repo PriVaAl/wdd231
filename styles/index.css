@@ -216,8 +216,19 @@ main {
     width: 90%;
 }
 .completed {
-    background-color: #4CAF50; 
+    background-color: #4CAF50;  
     color: white;
+    border: 2px solid #2E7D32;  
+    font-weight: bold;          
+    text-transform: uppercase;   
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease-in-out;
+}
+
+.completed:hover {
+    transform: scale(1.05);    
+    background-color: #388E3C; 
+    cursor: pointer;
 }
 
 footer {
