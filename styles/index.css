@@ -133,7 +133,7 @@ main {
     margin: 20px 0;
 }
 
-/* Card */
+
 .card {
     background-color: white;
     padding: 0;
@@ -166,6 +166,12 @@ main {
     padding-left: 40px;
 }
 
+.weeks {
+    list-style:circle;
+    align-items: center;
+    padding: 20px 30px;
+}
+
 .certificate {
     background-color:white;
     padding: 0px;
@@ -183,6 +189,19 @@ main {
     cursor: pointer;
     font-weight: 600;
     border-radius: 5px;
+    width: 20%;
+}
+
+.separator {
+    border: none;
+    border-top: 1px solid black;
+    margin:2px;
+}
+
+.courses {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 10px;
 }
 
 .courses button {
@@ -190,14 +209,17 @@ main {
     color: white;
     border: none;
     padding: 12px;
-    margin: 8px;
+    margin: 10px 15px ;
     cursor: pointer;
     border-radius: 5px;
     font-weight: bold;
-    width: 120px;
+    width: 90%;
+}
+.completed {
+    background-color: #4CAF50; 
+    color: white;
 }
 
-/* Footer */
 footer {
     background-color: #20557A;
     color: white;
@@ -210,6 +232,11 @@ footer img {
     width: 100px;
     height: auto;
     align-items: right;
+}
+
+#lastModified {
+    font-size: 1rem;
+    color: #F5C32E;
 }
 
 /* Mobile First: Responsive Navigation for Small Screens */
