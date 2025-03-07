@@ -100,7 +100,11 @@ function displayCourses(filteredCourses) {
     filteredCourses.forEach(course => {
         const courseButton = document.createElement('button');
         courseButton.textContent = `${course.subject} ${course.number}`;
-        courseButton.className = course.completed ? 'completed' : '';
+        if (course.completed) {
+            courseButton.classList.add('completed-course');
+        } else {
+            courseButton.classList.add('incomplete-course');
+        }
         coursesContainer.appendChild(courseButton);
     });
     displayTotalCredits(filteredCourses);

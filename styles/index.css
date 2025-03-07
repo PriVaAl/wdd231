@@ -205,17 +205,26 @@ main {
 }
 
 .courses button {
-    background-color: #8B4513;
-    color: white;
     border: none;
     padding: 12px;
     margin: 10px 15px ;
     cursor: pointer;
     border-radius: 5px;
-    font-weight: bold;
     width: 90%;
 }
-.completed {
+.incomplete-course {
+    background-color: #8B4513; 
+    color: white;
+    border: 2px solid #5A2A0A;
+    font-weight: bold;
+    opacity: 0.8;
+    transition: transform 0.2s ease-in-out;
+}
+
+.incomplete-course:hover {
+    transform: translateY(-3px);
+}
+.completed-course {
     background-color: #4CAF50;  
     color: white;
     border: 2px solid #2E7D32;  
@@ -225,7 +234,7 @@ main {
     transition: transform 0.2s ease-in-out;
 }
 
-.completed:hover {
+.completed-course:hover {
     transform: scale(1.05);    
     background-color: #388E3C; 
     cursor: pointer;
