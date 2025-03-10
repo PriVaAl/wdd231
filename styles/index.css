@@ -232,17 +232,17 @@ main {
     width: 90%;
 }
 .incomplete-course {
-    background-color: #7F3E10; 
+    background-color: #112D5E; 
     color: #ffffff;
-    border: 2px solid #5A2A0A;
+    border: 2px solid #8B4513;
     font-weight: bold;
-    opacity: 0.8;
+    opacity: 0.9;
     transition: transform 0.2s ease-in-out;
 }
 
 .incomplete-course:hover {
     transform: scale(1.05);    
-    background-color: #3A2A0A; 
+    background-color: #703A00; 
     cursor: pointer;
 }
 .completed-course {
