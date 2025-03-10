@@ -25,12 +25,12 @@ header, main {
     margin: 0 auto;
 }
 
-h1 {
+.profile h1 {
     color: #ffffff;
     margin-left: 20px;
 }
 
-.title h1 {
+h1 {
     text-align: left;
     color: #00000000;
 }
@@ -43,11 +43,9 @@ h1 {
 
 .profile img {
     width: 100px;
-    height: 100px;
+    height: auto;
     border-radius: 8px;
     align-content: center;
-    
-    
 }
 .highlight-name {
     color: #ffffff;
@@ -118,19 +116,40 @@ ul {
     list-style-type: none;
 }
 
-
 main {
     padding: 20px;
     text-align: center;
 }
 
-.grid {
+
+.main-layout {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 2fr 1fr; 
+    grid-template-rows: auto auto; 
     gap: 20px;
-    margin: 20px 0;
+    align-items: stretch;
 }
 
+.grid {
+    grid-column: 1/2;
+    grid-row: 1 / 2;
+    gap: 20px;
+    margin: 20px 0;
+    height: 100%;
+}
+
+.aside {
+    grid-column: 2/3;
+    grid-row: 1 / 2;
+    gap: 20px;
+    margin: 20px 0;
+
+}
+
+.grid, .aside {
+    display: flex;
+    flex-direction: column;
+}
 
 .card {
     background-color: #ffffff;
@@ -171,6 +190,8 @@ main {
 }
 
 .certificate {
+    grid-row: 2 / 3;
+    grid-column: 1 / 3;
     background-color:#ffffff;
     padding: 0px;
     border: 1px solid #dddddd;
@@ -304,7 +325,7 @@ footer img {
 		flex: 1 1 100%;
 	}
 
-    .grid image {
+    .grid image, .aside image {
         align-content: center;
     }
 

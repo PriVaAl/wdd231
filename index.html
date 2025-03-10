@@ -16,7 +16,7 @@
 <body>
     <header>
         <div class="profile">
-            <img src="images/profile.jpg" alt="Priscilla Valverde Alvarez" style="width: 100px; height: auto;">
+            <img src="images/profile.jpg" alt="Priscilla Valverde Alvarez">
             <h1>Priscilla Valverde Alvarez</h1>
         </div>   
     </header>
@@ -31,37 +31,41 @@
     </nav>
     
     <main>
-        <section class="title">
-            <h1>Home</h1>
-        </section>
-        <section class="grid">
-            <div class="card">
-            <h2>Course Work</h2>
-            <ul class="weeks">
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
-            </div>
-            <div class="card">
-                <h2>Limón, Costa Rica</h2>
-                <img src="images/palmtrees.jpeg" alt="Palm Trees">
-                <p>Limón Palm Trees</p>
-            </div>
-        </section>
-        <section class="certificate">
-            <h2>Web and Computer Programming Certificate</h2>
-            <div class="filters">
-                <button onclick="filterCourses('all')">All</button>
-                <button onclick="filterCourses('CSE')">CSE</button>
-                <button onclick="filterCourses('WDD')">WDD</button>
-            </div>
-            <hr class="separator">
-            <div class="courses" id="courses">
-    
-            </div>
-            <p id="totalCredits">Total Credits: 0</p>
-        </section>
+        <h1>Home</h1>
+        <div class=main-layout>
+            <section class="grid">
+                <div class="card">
+                    <h2>Course Work</h2>
+                    <ul class="weeks">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+            </section>
+            <section class="aside">    
+                <div class="card">
+                    <h2>Limón, Costa Rica</h2>
+                    <img src="images/palmtrees.jpeg" alt="Palm Trees">
+                    <p>Limón Palm Trees</p>
+                </div>
+            </section>
+            <section class="certificate">
+                <h2>Web and Computer Programming Certificate</h2>
+                <div class="filters">
+                    <button onclick="filterCourses('all')">All</button>
+                    <button onclick="filterCourses('CSE')">CSE</button>
+                    <button onclick="filterCourses('WDD')">WDD</button>
+                </div>
+                <hr class="separator">
+                <div class="courses" id="courses">
+        
+                </div>
+                <p id="totalCredits">Total Credits: 0</p>
+            </section> 
+
+        </div>
+        
     </main>
     <footer>
         <p>&copy;<span id="currentYear"></span> 🌸 Priscilla Valverde Alvarez 🌸 Costa Rica <img src="images/flag.jpg" alt="Costa Rica Flag" class="flag"></p>
