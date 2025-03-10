@@ -242,7 +242,7 @@ main {
 
 .incomplete-course:hover {
     transform: scale(1.05);    
-    background-color: #5A2A0A; 
+    background-color: #3A2A0A; 
     cursor: pointer;
 }
 .completed-course {
