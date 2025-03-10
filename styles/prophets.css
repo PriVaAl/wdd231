@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e6e6fa;
+    text-align: center;
+    margin: 0;
+}
+
+header {
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #4a3083;
+}
+
+/* Use Grid for the Cards Section */
+#cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns for desktop */
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+section {
+    background-color: #c6c3e0;
+    border: 2px solid #4a3083;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Styling for Prophet Names */
+.prophet-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #4a3083;
+}
+
+p {
+    font-size: 1rem;
+    color: black;
+}
+
+img {
+    margin-top: 10px;
+    border-radius: 5px;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+/* Responsive Layout */
+@media screen and (max-width: 1024px) {
+    #cards {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns for tablets */
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #cards {
+        grid-template-columns: 1fr; /* 1 column for mobile */
+    }
+}

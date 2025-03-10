@@ -1,0 +1,28 @@
+{
+    "familyName": "Vargas",
+    "moveInDate": "2024-03-01",
+    "numberOfPeople": 4,
+    "visitedByBishopric": true,
+    "familyMembers": [
+        {
+            "name": "Diego Vargas",
+            "gender": "Male",
+            "birthdate": "1984-10-12"
+        },
+        {
+            "name": "Priscilla Vargas",
+            "gender": "Female",
+            "birthdate": "1985-07-01"
+        },
+        {
+            "name": "Samuel Vargas",
+            "gender": "Male",
+            "birthdate": "2011-01-10"
+        },
+        {
+            "name": "Benjamin Vargas",
+            "gender": "Male",
+            "birthdate": "2015-03-24"
+        }
+    ]
+}
