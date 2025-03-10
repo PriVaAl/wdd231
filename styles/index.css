@@ -241,7 +241,9 @@ main {
 }
 
 .incomplete-course:hover {
-    transform: translateY(-3px);
+    transform: scale(1.05);    
+    background-color: #5A2A0A; 
+    cursor: pointer;
 }
 .completed-course {
     background-color: #29562A;  
