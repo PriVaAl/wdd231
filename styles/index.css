@@ -12,7 +12,6 @@ body {
     
 }
 
-/* Header Styling */
 header {
     background-color: #1d4f71;
     padding: 20px;
@@ -129,7 +128,6 @@ main {
     grid-template-columns: 2fr 1fr; 
     grid-template-rows: auto auto; 
     gap: 20px;
-    align-items: stretch;
 }
 
 .grid {
@@ -282,8 +280,26 @@ footer img {
 }
 
 @media (max-width: 768px) {
+    .main-layout {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto; 
+    }
+
+
     .grid {
-        grid-template-columns: 1fr; 
+        grid-column: 1 / 2; /* Full width */
+        grid-row: 1 / 2;
+    }
+
+    .aside {
+        grid-column: 1 / 2; /* Full width */
+        grid-row: 2 / 3;
+    }
+
+    .certificate {
+        grid-column: 1 / 2; /* Full width */
+        grid-row: 3 / 4;
     }
 
     .courses {
@@ -327,7 +343,7 @@ footer img {
 		flex: 1 1 100%;
 	}
 
-    .grid image, .aside image {
+    .grid image {
         align-content: center;
     }
 
