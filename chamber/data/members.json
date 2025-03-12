@@ -1,0 +1,59 @@
+[
+    {
+      "name": "Manzanillo Tours",
+      "address": "123 Beachfront, Manzanillo, Costa Rica",
+      "phone": "+506 1234 5678",
+      "website": "https://manzanillotours.com",
+      "image": "company1.png",
+      "membership": 3
+    },
+    {
+      "name": "Jungle Eco Lodge",
+      "address": "45 Rainforest Rd, Manzanillo, Costa Rica",
+      "phone": "+506 8765 4321",
+      "website": "https://jungleecolodge.com",
+      "image": "company2.png",
+      "membership": 2
+    },
+    {
+      "name": "Pura Vida Coffee",
+      "address": "678 Market St, Manzanillo, Costa Rica",
+      "phone": "+506 2345 6789",
+      "website": "https://puravidacoffee.com",
+      "image": "company3.png",
+      "membership": 1
+    },
+    {
+      "name": "Surf & Sand Rentals",
+      "address": "56 Ocean Blvd, Manzanillo, Costa Rica",
+      "phone": "+506 3456 7890",
+      "website": "https://surfandsandrentals.com",
+      "image": "company4.png",
+      "membership": 3
+    },
+    {
+      "name": "Caribbean Eats",
+      "address": "890 Food Lane, Manzanillo, Costa Rica",
+      "phone": "+506 4567 8901",
+      "website": "https://caribbeaneats.com",
+      "image": "company5.png",
+      "membership": 2
+    },
+    {
+      "name": "Nature Treks",
+      "address": "901 Adventure Way, Manzanillo, Costa Rica",
+      "phone": "+506 5678 9012",
+      "website": "https://naturetreks.com",
+      "image": "company6.png",
+      "membership": 1
+    },
+    {
+      "name": "Coral Diving Center",
+      "address": "1001 Coral St, Manzanillo, Costa Rica",
+      "phone": "+506 6789 0123",
+      "website": "https://coraldiving.com",
+      "image": "company7.png",
+      "membership": 3
+    }
+  ]
+  
