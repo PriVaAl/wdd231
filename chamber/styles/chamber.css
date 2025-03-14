@@ -94,6 +94,9 @@ nav {
 	justify-content: space-between;
 	list-style: none;
     gap: 20px;
+    font-family: var(--heading-font);
+    font-size: 1.2rem;
+    font-weight: bold;
 }
 
 
