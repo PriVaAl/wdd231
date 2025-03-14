@@ -1,5 +1,18 @@
-document.getElementById("year").textContent = new Date().getFullYear();
-document.getElementById("lastModified").textContent = document.lastModified;
+document.addEventListener('DOMContentLoaded', function() {
+    const hamButton = document.querySelector('#menu');
+    const navigation = document.querySelector('.navigation');
+    
+    hamButton.addEventListener('click', () => {
+        navigation.classList.toggle('open');
+        hamButton.classList.toggle('open');
+    });
+
+const year = document.querySelector("#currentYear");
+const today = new Date();
+year.textContent = `${today.getFullYear()}`;
+
+const lastModifiedElement = document.querySelector("#lastModified")
+lastModifiedElement.textContent = "Last Modification: " + document.lastModified;
 
 const url = "data/members.json"; // Path to your JSON file
 const directoryContainer = document.querySelector(".directory");
@@ -66,4 +79,4 @@ function displayMembers(members) {
         console.log("Fetched members:", members);
     });
 }
-
+});
