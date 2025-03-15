@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway&display=swap');
 :root{
     --primary-color:  #00574D;
     --secondary-color: #2C5E4D;
@@ -364,7 +363,6 @@ footer nav a:hover {
         padding: 10px 15px;
 		flex: unset;
 	}
-
 
 }
 @media (max-width: 740px) {
