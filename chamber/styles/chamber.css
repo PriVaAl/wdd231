@@ -163,6 +163,8 @@ ul {
 .grid img {
 	border: 1px solid #fff;
 	box-shadow: 0 0 10px #333;
+    width: 100px;
+    height: 100px;
 }
 
 .grid section > * {
@@ -233,8 +235,8 @@ section {
 }
 
 .business-card img {
-    max-width: 100%;
-    height: auto;
+    max-width: 200px;
+    height: 200px;
     border-radius: 5px;
 }
 
@@ -376,8 +378,10 @@ footer nav a:hover {
 	}
 
 
-    .grid image {
+    .grid img {
         align-content: center;
+        width: 100px;
+        height: 100px;
     }
 
     .list-view .business-card {
