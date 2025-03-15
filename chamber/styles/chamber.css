@@ -159,8 +159,8 @@ ul {
 .grid img {
 	border: 1px solid #fff;
 	box-shadow: 0 0 10px #333;
-    width: 100%;
-    height: auto;
+    width: 100px;
+    height: 100px;
 }
 
 .grid section > * {
