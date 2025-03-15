@@ -24,18 +24,16 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: var(--background-color);
     color: var(--text-color);
-    margin: 0;
-    padding: 0;
+    text-align: center;
 }
 header {
-    background-color: var(--nav-background-color);
     padding: 10px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    background-color: var(--nav-background-color);
 }
 
 .logo {
@@ -91,16 +89,15 @@ nav {
 	justify-content: space-between;
 	list-style: none;
     gap: 20px;
-    font-family: Arial, sans-serif;
     font-size: 1.2rem;
     font-weight: bold;
+    
 }
 
 
 .navigation a {
     display: none;
     padding: 1rem;
-	text-align: center;
 	text-decoration: none;
 	color: var(--text-color);
 }
@@ -136,7 +133,6 @@ ul {
 .menu-b {
 	margin: 1rem auto;
 	padding: 0.5rem;
-	text-align: center;
     border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
@@ -152,9 +148,6 @@ ul {
 	align-items: center;
 }
 
-.grid section {
-	text-align: center;
-}
 
 .grid img {
 	border: 1px solid #fff;
@@ -165,10 +158,6 @@ ul {
 
 .grid section > * {
 	margin: 0.1rem;
-}
-
-.grid h3 {
-	font-family: Arial, sans-serif, cursive;
 }
 
 #business.list {
@@ -193,7 +182,6 @@ ul {
 
 .list section h3 {
 	font-size: 1rem;
-	font-family: Arial, sans-serif;
 }
 
 .list section:nth-child(even) {
@@ -203,7 +191,8 @@ ul {
 #business.grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 20px;
+    grid-gap: 1rem;
+    align-items: center;
     padding: 10px;
     max-width: 1300px;
 }
@@ -212,16 +201,13 @@ section {
     border: 2px solid var(--primary-color);
     border-radius: 10px;
     padding: 20px;
-    text-align: center;
 }
 
 /* Business Cards */
 .business-card {
-    border: 2px solid var(--primary-color);
     background-color: var(--card-bg);
     padding: 15px;
     border-radius: 8px;
-    text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -231,8 +217,8 @@ section {
 }
 
 .business-card img {
-    max-width: 200px;
-    height: 200px;
+    max-width: 100px;
+    height: 100px;
     border-radius: 5px;
 }
 
@@ -267,7 +253,6 @@ section {
     margin-bottom: 20px;
     display: block;
     width: 200px;
-    text-align: center;
     border-radius: 5px;
     transition: background-color 0.3s;
 }
@@ -348,6 +333,13 @@ footer nav a:hover {
     color: #FAF2D1;
     font-weight: bold;
 }
+
+@media (max-width: 600px) {
+    .business-card:hover {
+        box-shadow: 2px 2px 8px var(--card-shadow);
+    }
+}
+
 @media (min-width: 740px) {
     header {
         display: flex;
@@ -374,27 +366,6 @@ footer nav a:hover {
 	}
 
 
-    .grid img {
-        align-content: center;
-        width: 100px;
-        height: 100px;
-    }
-
-    .list-view .business-card {
-        display: flex;
-        align-items: center;
-        text-align: left;
-        padding: 15px;
-        gap: 15px;
-    }
-
-    social-links img {
-        
-        width: 25px;
-        height: 25px;
-    }
-
-
 }
 @media (max-width: 740px) {
     
@@ -408,8 +379,6 @@ footer nav a:hover {
    
 
 }
-
-    
 
 
 @media (min-width: 741px) and (max-width: 1024px) {
