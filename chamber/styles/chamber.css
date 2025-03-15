@@ -8,26 +8,11 @@
     --card-bg: #fff;
     --card-shadow: rgba(0, 0, 0, 0.1);
 
-    --heading-font: 'Montserrat', serif;
-    --paragraph-font: 'Raleway', serif;
-
     --nav-background-color: var(--accent2-color);
     --nav-link-color: var(--accent1-color);
     --nav-hover-link-color: var(--accent2-color);
     --nav-hover-background-color: var(--secondary-color);
 } 
-
-@font-face {
-    font-family: 'Montserrat';
-    src: url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Raleway';
-    src: url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
-    font-display: swap;
-}
 
 
 * {
@@ -38,7 +23,7 @@
 
 
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: Arial, sans-serif;
     background-color: var(--background-color);
     color: var(--text-color);
     margin: 0;
@@ -108,7 +93,7 @@ nav {
 	justify-content: space-between;
 	list-style: none;
     gap: 20px;
-    font-family: var(--heading-font);
+    font-family: Arial, sans-serif;
     font-size: 1.2rem;
     font-weight: bold;
 }
@@ -185,7 +170,7 @@ ul {
 }
 
 .grid h3 {
-	font-family: "Caveat", cursive;
+	font-family: Arial, sans-serif, cursive;
 }
 
 #business.list {
@@ -210,7 +195,7 @@ ul {
 
 .list section h3 {
 	font-size: 1rem;
-	font-family: Roboto, Helvetica, sans-serif;
+	font-family: Arial, sans-serif;
 }
 
 .list section:nth-child(even) {
