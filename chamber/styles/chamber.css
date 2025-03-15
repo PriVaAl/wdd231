@@ -152,7 +152,7 @@ ul {
 .grid {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-	grid-gap: 5px;
+	grid-gap: 1rem;
 	align-items: center;
 }
 
@@ -173,7 +173,7 @@ ul {
 	font-family: "Caveat", cursive;
 }
 
-.list {
+#business.list {
 	display: flex;
 	flex-direction: column;
 }
@@ -202,7 +202,7 @@ ul {
 	background-color: #bed;
 }
 
-#business{
+#business.grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 20px;
@@ -380,6 +380,14 @@ footer nav a:hover {
         align-content: center;
     }
 
+    .list-view .business-card {
+        display: flex;
+        align-items: center;
+        text-align: left;
+        padding: 15px;
+        gap: 15px;
+    }
+
 
 }
 @media (max-width: 740px) {
@@ -391,8 +399,12 @@ footer nav a:hover {
     h2 {
         grid-column: span 1;
     }
-    
+   
+
 }
+
+    
+
 
 @media (min-width: 741px) and (max-width: 1024px) {
 
