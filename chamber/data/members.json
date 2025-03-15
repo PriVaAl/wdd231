@@ -4,7 +4,7 @@
       "address": "Centro Recreativo de Recope, Manzanillo, Costa Rica",
       "phone": "+506 2759 - 9126",
       "website": "https://manzanilloresort.cr/",
-      "image": "manzanillo.png",
+      "image": "manzanillo.jpg",
       "membership": 3,
       "bilingual": "Yes"
     },
@@ -13,7 +13,7 @@
       "address": "Puerto Viejo - Manzanillo, Limon 70403 Costa Rica",
       "phone": "+506 2759 - 9016",
       "website": "https://www.congo-bongo.com/",
-      "image": "congo.png",
+      "image": "congo.jpg",
       "membership": 2,
       "bilingual": "Yes"
     },
@@ -22,7 +22,7 @@
       "address": "678 Market St, Manzanillo, Costa Rica",
       "phone": "+506 2345 6789",
       "website": "https://www.twodustytravelers.com/",
-      "image": "dusty.png",
+      "image": "dusty.jpg",
       "membership": 1,
       "bilingual": "No"
     },
@@ -31,7 +31,7 @@
       "address": "Barrio el Panadero, Manzanillo, Costa Rica",
       "phone": "+506 6261 - 4853",
       "website": "https://www.puertoviejosatellite.com/en/manzanillo/tambies-bro-panaderia/",
-      "image": "puerto-viejo.png",
+      "image": "puerto-viejo.jpg",
       "membership": 3,
       "bilingual": "Yes"
     },
@@ -40,7 +40,7 @@
       "address": "890 Food Lane, Manzanillo, Costa Rica",
       "phone": "+506 2750 - 2035",
       "website": "https://www.bananaazul.com/azul-bar-grill",
-      "image": "banana.png",
+      "image": "banana.jpg",
       "membership": 2,
       "bilingual": "No"
     },
@@ -58,7 +58,7 @@
       "address": "Avenida 71, Gandoca, Manzanillo, Costa Rica",
       "phone": "+506 8762 - 8848",
       "website": "https://www.gandocatours.com/tour/snorkel/",
-      "image": "gaconda.png",
+      "image": "gaconda.jpg",
       "membership": 3,
       "bilingual": "No"
     },
@@ -68,7 +68,7 @@
       "address": "La California, Limon, Costa Rica",
       "phone": "+506 8027 - 9046",
       "website": "https://costaricaexperts.com/things-to-do/diving-scuba-snorkel/",
-      "image": "experts.png",
+      "image": "experts.jpg",
       "membership": 2,
       "bilingual": "Yes"
     }
