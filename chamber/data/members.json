@@ -5,7 +5,8 @@
       "phone": "+506 2759 - 9126",
       "website": "https://manzanilloresort.cr/",
       "image": "manzanillo.png",
-      "membership": 3
+      "membership": 3,
+      "bilingual": true
     },
     {
       "name": "Congo Bongo",
@@ -13,7 +14,8 @@
       "phone": "+506 2759 - 9016",
       "website": "https://www.congo-bongo.com/",
       "image": "congo.png",
-      "membership": 2
+      "membership": 2,
+      "bilingual": true
     },
     {
       "name": "Two Dusty Traveler",
@@ -21,7 +23,8 @@
       "phone": "+506 2345 6789",
       "website": "https://www.twodustytravelers.com/",
       "image": "dusty.png",
-      "membership": 1
+      "membership": 1,
+      "bilingual": false
     },
     {
       "name": "Puerto Viejo Satelite",
@@ -29,7 +32,8 @@
       "phone": "+506 6261 - 4853",
       "website": "https://www.puertoviejosatellite.com/en/manzanillo/tambies-bro-panaderia/",
       "image": "puerto-viejo.png",
-      "membership": 3
+      "membership": 3,
+      "bilingual": true
     },
     {
       "name": "Hotel Banana Azul",
@@ -37,7 +41,8 @@
       "phone": "+506 2750 - 2035",
       "website": "https://www.bananaazul.com/azul-bar-grill",
       "image": "banana.png",
-      "membership": 2
+      "membership": 2,
+      "bilingual": false
     },
     {
       "name": "Fonda Caribe",
@@ -45,7 +50,8 @@
       "phone": "+506 5678 - 9012",
       "website": "https://fondacaribe.com/",
       "image": "fonda.webp",
-      "membership": 1
+      "membership": 1,
+      "bilingual": true
     },
     {
       "name": "Gaconda Tours",
@@ -53,7 +59,8 @@
       "phone": "+506 8762 - 8848",
       "website": "https://www.gandocatours.com/tour/snorkel/",
       "image": "gaconda.png",
-      "membership": 3
+      "membership": 3,
+      "bilingual": false
     },
     {
       "name": "Costa Rica Escapes",
@@ -61,7 +68,8 @@
       "phone": "+506 2789 - 8818",
       "website": "https://www.creescapes.com/where-to-go-in-costa-rica/limon/manzanillo/",
       "image": "escapes.jpg",
-      "membership": 2
+      "membership": 2,
+      "bilingual": true
     },
     {
       "name": "Costa Rica Diving Experts",
@@ -69,7 +77,8 @@
       "phone": "+506 8027 - 9046",
       "website": "https://costaricaexperts.com/things-to-do/diving-scuba-snorkel/",
       "image": "experts.png",
-      "membership": 3
+      "membership": 3,
+      "bilingual": false
     }
   ]
   

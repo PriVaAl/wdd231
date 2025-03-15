@@ -84,12 +84,23 @@ function displayMembers(members) {
         image.setAttribute("width", "150");
         image.setAttribute("height", "150");
 
+        const membership = document.createElement("p");
+        membership.textContent = `Membership: ${member.membership}`;
+        membership.classList.add(`level-${member.membership}`); 
+
+        
+        const bilingual = document.createElement("p");
+        bilingual.textContent = `Bilingual Staff: ${member.bilingual_staff ? "Yes" : "No"}`;
+
+
         // Append all elements to the card
         card.appendChild(image);
         card.appendChild(name);
         card.appendChild(address);
         card.appendChild(phone);
         card.appendChild(website);
+        card.appendChild(membership);
+        card.appendChild(bilingual);
 
 
         console.log("Appending card for:", member.name);
