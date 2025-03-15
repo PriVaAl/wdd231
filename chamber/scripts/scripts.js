@@ -90,7 +90,7 @@ function displayMembers(members) {
 
         
         const bilingual = document.createElement("p");
-        bilingual.textContent = `Bilingual Staff: ${member.bilingual_staff ? "Yes" : "No"}`;
+        bilingual.textContent = `Bilingual Staff: ${member.bilingual}`;
 
 
         // Append all elements to the card

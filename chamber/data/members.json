@@ -1,12 +1,12 @@
 {
   "members": [ {
-      "name": "Manzanillo Caribbean Resort",
+      "name": "Caribbean Resort",
       "address": "Centro Recreativo de Recope, Manzanillo, Costa Rica",
       "phone": "+506 2759 - 9126",
       "website": "https://manzanilloresort.cr/",
       "image": "manzanillo.png",
       "membership": 3,
-      "bilingual": true
+      "bilingual": "Yes"
     },
     {
       "name": "Congo Bongo",
@@ -15,7 +15,7 @@
       "website": "https://www.congo-bongo.com/",
       "image": "congo.png",
       "membership": 2,
-      "bilingual": true
+      "bilingual": "Yes"
     },
     {
       "name": "Two Dusty Traveler",
@@ -24,7 +24,7 @@
       "website": "https://www.twodustytravelers.com/",
       "image": "dusty.png",
       "membership": 1,
-      "bilingual": false
+      "bilingual": "No"
     },
     {
       "name": "Puerto Viejo Satelite",
@@ -33,7 +33,7 @@
       "website": "https://www.puertoviejosatellite.com/en/manzanillo/tambies-bro-panaderia/",
       "image": "puerto-viejo.png",
       "membership": 3,
-      "bilingual": true
+      "bilingual": "Yes"
     },
     {
       "name": "Hotel Banana Azul",
@@ -42,16 +42,16 @@
       "website": "https://www.bananaazul.com/azul-bar-grill",
       "image": "banana.png",
       "membership": 2,
-      "bilingual": false
+      "bilingual": "No"
     },
     {
-      "name": "Fonda Caribe",
-      "address": "Cocles, Manzanillo, Costa Rica",
-      "phone": "+506 5678 - 9012",
-      "website": "https://fondacaribe.com/",
-      "image": "fonda.webp",
+      "name": "Costa Rica Escapes",
+      "address": "Gandoca Street, Limon, Costa Rica",
+      "phone": "+506 2789 - 8818",
+      "website": "https://www.creescapes.com/where-to-go-in-costa-rica/limon/manzanillo/",
+      "image": "escapes.jpg",
       "membership": 1,
-      "bilingual": true
+      "bilingual": "Yes"
     },
     {
       "name": "Gaconda Tours",
@@ -60,25 +60,17 @@
       "website": "https://www.gandocatours.com/tour/snorkel/",
       "image": "gaconda.png",
       "membership": 3,
-      "bilingual": false
+      "bilingual": "No"
     },
-    {
-      "name": "Costa Rica Escapes",
-      "address": "Gandoca, Limon, Costa Rica",
-      "phone": "+506 2789 - 8818",
-      "website": "https://www.creescapes.com/where-to-go-in-costa-rica/limon/manzanillo/",
-      "image": "escapes.jpg",
-      "membership": 2,
-      "bilingual": true
-    },
+   
     {
       "name": "Costa Rica Diving Experts",
       "address": "La California, Limon, Costa Rica",
       "phone": "+506 8027 - 9046",
       "website": "https://costaricaexperts.com/things-to-do/diving-scuba-snorkel/",
       "image": "experts.png",
-      "membership": 3,
-      "bilingual": false
+      "membership": 2,
+      "bilingual": "Yes"
     }
   ]
   
