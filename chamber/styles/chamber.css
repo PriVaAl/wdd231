@@ -256,7 +256,7 @@ section {
 
 .level-3 { background-color: gold; color: black; }
 .level-2 { background-color: silver; color: black; }
-.level-1 { background-color: #cd7f32; color: white; } /* Bronze */
+.level-1 { background-color: #615200; color: white; } /* Bronze */
 
 /* Grid/List Toggle */
 #toggleView {
