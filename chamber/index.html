@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Official website of the Manzanillo Chamber of Commerce, supporting local businesses and community growth.">
+    <meta name="description" content="Official website of the Manzanillo Chamber of Commerce, The home page will contain some attention grabbing information along with community information, weather, calls to action, and business spotlights.">
     <meta name="author" content="Priscilla Valverde">
     <meta property="og:title" content="Manzanillo Chamber of Commerce">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://privaal.github.io/wdd231/chamber/images/og-image.png">
     <meta property="og:url" content="https://privaal.github.io/wdd231/chamber/directory.html">
-    <title>Business Directory | Manzanillo Chamber of Commerce</title>
+    <title>Home | Manzanillo Chamber of Commerce</title>
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="styles/chamber.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,8 +29,8 @@
         <button id="menu" aria-label="Toggle navigation menu"></button>       
         <nav>
             <ul class="navigation">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="directory.html" class="active">Directory</a></li>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="directory.html" >Directory</a></li>
                 <li><a href="join.html">Join</a></li>
                 <li><a href="discover.html">Discover</a></li>
                 
@@ -41,20 +41,51 @@
     </header>
     
     <main>
-        <h1>Business Directory</h1>
-        <div class="menu-b">
-            <button id="grid">⏹️</button>
-		    <button id="list">📄</button>
-            <hr>
-	        <article class="grid">
-                <section class="directory">
-                    <div id="business">
-                        <!--Info comes here-->
-                    </div>
-                </section>
-            </article>    
-        </div>
+        <section class="hero">
+            <img src="images/manzanillo-hero.jpg" alt="Chamber of Manzanillo" class="hero-img">
+            <div class="hero-text">
+                <a href="join.html" class="cta-button">Join the Chamber</a>
+
+            </div>
+        </section>
+
         
+        <section class="info-container">
+            <div class="current-events-card">
+                <h2>Current Events</h2>
+                <p>Stay tuned for upcoming events in your community!</p>
+                <ul>
+                    <li>Event 1: Date and details</li>
+                    <li>Event 2: Date and details</li>
+                    <li>Event 3: Date and details</li>
+                </ul>
+            </div>
+            
+            
+
+        <!-- Weather Section -->
+            <div class="weather-card">
+                <h2>Current Weather</h2>
+                <figure>
+                    <img id="weather-icon" src="" alt="Weather icon">
+                    <figcaption id="weather-description"></figcaption>
+                </figure>
+                <p id="current-temp"></p>
+            </div>
+            <div class="forecast-card">
+                <h2>3-Day Forecast</h2>    
+                <div class="forecast-container"></div> <!-- This is where forecast data will be inserted -->
+            </div>
+        </section>
+
+        <!-- Spotlight Section -->
+        <section class="spotlights">
+            <h2 class="spotlight-title">Chamber Member Spotlights</h2>
+            <div class="spotlight-cards">
+                <!-- Member spotlight cards will be displayed here -->
+            </div>
+        </section>
+
     </main>
     
     <footer>
@@ -82,5 +113,6 @@
     </footer>
     
     <script src="scripts/scripts.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
 </body>
 </html>
