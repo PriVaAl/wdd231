@@ -46,7 +46,7 @@ header {
     margin-right: 10px;
 }
 
-.title h1 {
+.title h1, h1 {
     font-size: 1.5rem;
     margin: 0;
 }
