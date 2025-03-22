@@ -2,18 +2,30 @@ document.addEventListener('DOMContentLoaded', function() {
     const hamButton = document.querySelector('#menu');
     const navigation = document.querySelector('.navigation');
     
-    hamButton.addEventListener('click', () => {
-        navigation.classList.toggle('open');
-        hamButton.classList.toggle('open');
-    });
-    
+    if (hamButton && navigation) {
+        hamButton.addEventListener('click', () => {
+            navigation.classList.toggle('open');
+            hamButton.classList.toggle('open');
+        });
+    } else {
+        console.error("Error: Menu button or navigation not found.");
+    }
 
-const year = document.querySelector("#currentYear");
-const today = new Date();
-year.textContent = `${today.getFullYear()}`;
+    const year = document.querySelector("#currentYear");
+    const lastModifiedElement = document.querySelector("#lastModified");
 
-const lastModifiedElement = document.querySelector("#lastModified")
-lastModifiedElement.textContent = "Last Modification: " + document.lastModified;
+    if (year) {
+        const today = new Date();
+        year.textContent = `${today.getFullYear()}`;
+    } else {
+        console.error("Error: #currentYear element not found.");
+    }
+
+    if (lastModifiedElement) {
+        lastModifiedElement.textContent = "Last Modification: " + document.lastModified;
+    } else {
+        console.error("Error: #lastModified element not found.");
+    }
 });
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -21,7 +33,11 @@ document.addEventListener('DOMContentLoaded', function () {
     const listButton = document.querySelector("#list");
     const businessContainer = document.querySelector("#business");
 
-    // Set default view as Grid
+    if (!gridButton || !listButton || !businessContainer) {
+        console.error("Error: One or more elements (#grid, #list, #business) not found.");
+        return;
+    }
+
     businessContainer.classList.add('grid');
 
     gridButton.addEventListener('click', () => {
@@ -37,11 +53,15 @@ document.addEventListener('DOMContentLoaded', function () {
 
 const url = "data/members.json"; 
 const businessContainer = document.getElementById("business");
-console.log("Directory container:", businessContainer); // The container for business cards
+
+if (!businessContainer) {
+    console.error("Error: #business container not found.");
+}
 
 async function getMembers() {
     try {
         const response = await fetch(url);
+        if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);
         const data = await response.json();
         displayMembers(data.members);
     } catch (error) {
@@ -50,48 +70,55 @@ async function getMembers() {
 }
 
 function displayMembers(members) {
+    const businessContainer = document.getElementById("business");
+
+    if (!businessContainer) {
+        console.error("Error: #business container not found in the DOM.");
+        return;
+    }
+
     members.forEach(member => {
-        // Create the section card
         const card = document.createElement("section");
 
         // Business Name
         const name = document.createElement("h2");
-        name.textContent = `${member.name}`;
+        name.textContent = member.name;
         name.classList.add("member-name");
 
         // Business Address
         const address = document.createElement("p");
         address.textContent = `📍 ${member.address}`;
-        
 
         // Business Phone
         const phone = document.createElement("p");
         phone.textContent = `📞 ${member.phone}`;
-        
 
         // Business Website
         const website = document.createElement("a");
-        website.href = `${member.website}`;
+        website.href = member.website ? member.website : "#";
         website.textContent = "🌍 Visit Website";
         website.target = "_blank";
-        
 
         // Business Image
         const image = document.createElement("img");
-        image.setAttribute("src", `images/${member.image}`);
+        if (member.image) {
+            image.setAttribute("src", `images/${member.image}`);
+        } else {
+            image.setAttribute("src", "images/default-placeholder.png");
+        }
         image.setAttribute("alt", `${member.name} logo`);
         image.setAttribute("loading", "lazy");
         image.setAttribute("width", "150");
         image.setAttribute("height", "150");
 
+        // Membership Level
         const membership = document.createElement("p");
         membership.textContent = `Membership: ${member.membership}`;
-        membership.classList.add(`level-${member.membership}`); 
+        membership.classList.add(`level-${member.membership}`);
 
-        
+        // Bilingual Staff
         const bilingual = document.createElement("p");
         bilingual.textContent = `Bilingual Staff: ${member.bilingual}`;
-
 
         // Append all elements to the card
         card.appendChild(image);
@@ -102,13 +129,13 @@ function displayMembers(members) {
         card.appendChild(membership);
         card.appendChild(bilingual);
 
-
         console.log("Appending card for:", member.name);
-        console.log("Current container:", businessContainer);
         console.log("Generated card:", card);
 
         // Append card to the container
         businessContainer.appendChild(card);
     });
 }
+
+// Call function to fetch members
 getMembers();
