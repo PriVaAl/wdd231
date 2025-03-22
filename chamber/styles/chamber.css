@@ -438,8 +438,6 @@ main {
 }
 
 
-
-
 footer{
     display: flex;
     justify-content: space-between;
@@ -533,7 +531,20 @@ footer nav a:hover {
     h2 {
         grid-column: span 1;
     }
-    footer {
+    .info-container,
+    .spotlight-cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info-container > div,
+    .spotlight-cards > div {
+        width: 100%; /* Makes all cards take full width */
+        max-width: 350px; /* Prevents cards from being too wide */
+    }
+
+    footer  {
         flex-direction: column;
         align-items: center;
         text-align: center;
@@ -563,6 +574,7 @@ footer nav a:hover {
     }
     
 }
+
 
 @media (min-width: 1025px) {
 
