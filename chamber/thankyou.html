@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Official website of the Manzanillo Chamber of Commerce, The home page will contain some attention grabbing information along with community information, weather, calls to action, and business spotlights.">
+    <meta name="author" content="Priscilla Valverde">
+    <meta property="og:title" content="Manzanillo Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://privaal.github.io/wdd231/chamber/images/og-image.png">
+    <meta property="og:url" content="https://privaal.github.io/wdd231/chamber/directory.html">
+    <title>Home | Manzanillo Chamber of Commerce</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/join.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="favicon.ico" alt="Chamber of Commerce">
+            <div class="title">
+                <h1>Manzanillo</h1>
+                <p>Chamber of Commerce</p>
+            </div>
+        </div> 
+        <button id="menu" aria-label="Toggle navigation menu"></button>       
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html" >Directory</a></li>
+                <li><a href="join.html" class="active">Join</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                
+            </ul>
+              
+        </nav>
+        <button id= "button" class="dark-mode-toggle">🌗</button>
+    </header>
+    <main>
+        <h1>We just want to say Thank You for trusting us!</h1>
+    </main>
+    
+    <footer>
+        <div>
+            <p>Manzanillo Chamber of Commerce</p>
+            <p>785 Main Street, Manzanillo, Costa Rica</p>
+            <p>Phone: (506)8895-4523</p>
+        </div>
+        <nav class="sociallinks">
+            <a href="https://facebook.com">
+                <img src="images/facebook.webp" alt="Facebook">
+            </a>
+            <a href="https://twitter.com">
+                <img src="images/twitter.webp" alt="Twitter">
+            </a>
+            <a href="https://instagram.com">
+                <img src="images/instagram.webp" alt="Instagram">
+            </a>
+        </nav>
+        <div>
+            <p>&copy;<span id="currentYear"></span> Manzanillo Chamber of Commerce</p>
+            <p>Developed by Priscilla Valverde | WDD 231</p>
+            <p>Last updated:<span id="lastModified"></span></p>
+        </div>    
+    </footer>
+    
+    <script src="scripts/scripts.js" defer></script>
+    <script src="scripts/form.js" defer></script>
+</body>
+</html>
