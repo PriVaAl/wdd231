@@ -9,7 +9,7 @@
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://privaal.github.io/wdd231/chamber/images/og-image.png">
     <meta property="og:url" content="https://privaal.github.io/wdd231/chamber/directory.html">
-    <title>Home | Manzanillo Chamber of Commerce</title>
+    <title>Thank You | Manzanillo Chamber of Commerce</title>
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="styles/join.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -39,9 +39,23 @@
         </nav>
         <button id= "button" class="dark-mode-toggle">🌗</button>
     </header>
-    <main>
-        <h1>We just want to say Thank You for trusting us!</h1>
+    <main> 
+        <h1>Thank You for Joining!</h1>
+        <p>We appreciate your trust and will be in touch soon. Here is the information you submitted:</p>
+        
+        <div id="userDetails" class="thank-you-info">
+            <p><strong>First Name:</strong> <span id="firstNameDisplay"></span></p>
+            <p><strong>Last Name:</strong> <span id="lastNameDisplay"></span></p>
+            <p><strong>Email:</strong> <span id="emailDisplay"></span></p>
+            <p><strong>Phone:</strong> <span id="phoneDisplay"></span></p>
+            <p><strong>Business/Organization Name:</strong> <span id="businessDisplay"></span></p>
+            <p><strong>Date of Submission:</strong><span id="timestampDisplay"></span></p>
+            <div class="back-to-home">
+                <a href="index.html">Back to Home</a>
+            </div>
+        </div>
     </main>
+
     
     <footer>
         <div>
@@ -67,7 +81,7 @@
         </div>    
     </footer>
     
-    <script src="scripts/scripts.js" defer></script>
+    <script src="scripts/thankyou.js" defer></script>
     <script src="scripts/form.js" defer></script>
 </body>
 </html>

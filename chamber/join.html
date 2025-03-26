@@ -43,19 +43,18 @@
         <h1>Join the Manzanillo Chamber of Commerce</h1>
         <form action="thankyou.html" method="GET">
         
-        <!-- First Name -->
+        
         <label for="firstName" title="Enter your first name">
             First Name:
             <input type="text" id="firstName" name="firstName" required autocomplete="given-name" title="Your first name" placeholder="John">
         </label><br>
 
-        <!-- Last Name -->
         <label for="lastName" title="Enter your last name">
             Last Name:
             <input type="text" id="lastName" name="lastName" required autocomplete="family-name" title="Your last name" placeholder="Doe">
         </label><br>
 
-        <!-- Organizational Title -->
+        
         <label for="organizationTitle" title="Enter your organizational title">
             Organizational Title:
             <input type="text" id="organizationTitle" name="organizationTitle" required title="Your organizational title" pattern="[A-Za-z\s-]{7,}" autocomplete="organization-title" placeholder="Manager">
@@ -76,7 +75,7 @@
         <!-- Business Name -->
         <label for="businessName" title="Enter your business name">
             Business Name:
-            <input type="text" id="businessName" name="businessName" required autocomplete="organization" title="Your business name" placeholder="Acme Corp">
+            <input type="text" id="business" name="business" required autocomplete="organization" title="Your business name" placeholder="Acme Corp">
         </label><br>
 
         <!-- Membership Level -->
@@ -98,10 +97,10 @@
         </label><br>
 
         <!-- Timestamp (Hidden) -->
-        <input type="hidden" name="timestamp" id="timestamp" value="">
+        <input type="hidden" name="timestamp" id="timestamp">
 
         <!-- Submit Button -->
-        <input type="submit" value="Submit" title="Submit your form">
+        <button type="submit">Submit</button>
         </form>
         <div class="membership-cards">
             <div class="card" id="npCard">

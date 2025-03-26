@@ -354,6 +354,40 @@ footer nav a:hover {
     font-weight: bold;
 }
 
+.thank-you-info {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.thank-you-info p {
+    font-size: 1.1rem;
+    margin: 10px 0;
+    color: #555;
+}
+
+.thank-you-info p span {
+    font-weight: bold;
+    color: #004d6b;
+}
+
+.thank-you-info .back-to-home {
+    margin-top: 2rem;
+    font-size: 1.2rem;
+}
+
+.thank-you-info .back-to-home a {
+    text-decoration: none;
+    color: #004d6b;
+}
+
+.thank-you-info .back-to-home a:hover {
+    text-decoration: underline;
+}
+
 @media (max-width: 600px) {
     .business-card:hover {
         box-shadow: 2px 2px 8px var(--card-shadow);
