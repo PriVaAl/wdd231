@@ -126,7 +126,7 @@ main {
 .main-layout {
     display: grid;
     grid-template-columns: 2fr 1fr; 
-    grid-template-rows: auto auto; 
+    grid-template-rows: auto; 
     gap: 20px;
 }
 
@@ -259,6 +259,40 @@ main {
     transform: scale(1.05);    
     background-color: #388E3C; 
     cursor: pointer;
+}
+
+dialog {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: .25rem;
+    padding: 1rem;
+    background-color: #fff;
+    box-shadow: 0 0 3rem #777;
+    width: 90%;
+    max-width: 600px;
+}
+
+::backdrop {
+    background-color: rgba(0 0 0 / 0.5);
+}
+
+button#closeModal {
+    padding: 10px;
+    background-color: #ff4747;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button#closeModal:hover {
+    background-color: #ff1f1f;
+}
+dialog button {
+    position: absolute;
+    top: 23px;
+    right: 23px;
+    padding: .5rem 1rem;
+    border: 1px solid rgba(0 0 0 / 0.1);
 }
 
 footer {

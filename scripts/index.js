@@ -105,6 +105,7 @@ function displayCourses(filteredCourses) {
         } else {
             courseButton.classList.add('incomplete-course');
         }
+        courseButton.addEventListener('click', () => {displayCourseDetails(course)});
         coursesContainer.appendChild(courseButton);
     });
     displayTotalCredits(filteredCourses);
@@ -131,3 +132,29 @@ document.querySelector('.filters button[onclick="filterCourses(\'WDD\')"]').addE
 
 filterCourses('all');
 });
+
+function displayCourseDetails(course) {
+    const courseDetails = document.getElementById('course-details');
+    
+    // Clear any previous content and populate the dialog
+    courseDetails.innerHTML = `
+        <button id="closeModal">Close</button>
+        <h2>${course.subject} ${course.number}</h2>
+        <h3>${course.title}</h3>
+        <p><strong>Credits:</strong> ${course.credits}</p>
+        <p><strong>Certificate:</strong> ${course.certificate}</p>
+        <p>${course.description}</p>
+        <p><strong>Technology:</strong> ${course.technology.join(', ')}</p>
+    `;
+
+    // Show the dialog
+    courseDetails.showModal();
+
+    // Get the close button after it has been added to the DOM
+    const closeModal = document.getElementById('closeModal');
+
+    // Close the dialog when the close button is clicked
+    closeModal.addEventListener('click', () => {
+        courseDetails.close();
+    });
+}
