@@ -140,7 +140,12 @@ ul {
 	padding: 1rem;
 	font-weight: 700;
 }
-
+.container {
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* Two equal columns */
+    gap: 40px;
+    padding: 30px;
+  }
 
 form {
     max-width: 600px;
@@ -250,7 +255,7 @@ button[type="submit"]:hover {
 .modal-content {
   background-color: #fefefe;
   margin: 5% auto;
-  padding: 20px;
+  padding: 30px;
   border: 1px solid #888;
   width: 80%;
 }
@@ -271,16 +276,18 @@ button[type="submit"]:hover {
 
 /* Membership Card Styling */
 .membership-cards {
+    padding-top: 30px;
   display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
+  flex-direction: column;
+  gap: 40px;
 }
 .card {
   background-color: #f4f4f4;
   border: #330D59;
   padding: 20px;
   border-radius: 8px;
-  width: 23%;
+  height:auto;
+  width: 100%;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
   opacity: 0;

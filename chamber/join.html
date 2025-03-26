@@ -41,125 +41,138 @@
     </header>
     <main>
         <h1>Join the Manzanillo Chamber of Commerce</h1>
-        <form action="thankyou.html" method="GET">
+        <section class="container">
+            <form action="thankyou.html" method="GET">
         
         
-        <label for="firstName" title="Enter your first name">
-            First Name:
-            <input type="text" id="firstName" name="firstName" required autocomplete="given-name" title="Your first name" placeholder="John">
-        </label><br>
-
-        <label for="lastName" title="Enter your last name">
-            Last Name:
-            <input type="text" id="lastName" name="lastName" required autocomplete="family-name" title="Your last name" placeholder="Doe">
-        </label><br>
-
+                <label for="firstName" title="Enter your first name">
+                    First Name:
+                    <input type="text" id="firstName" name="firstName" required autocomplete="given-name" title="Your first name" placeholder="John">
+                </label><br>
         
-        <label for="organizationTitle" title="Enter your organizational title">
-            Organizational Title:
-            <input type="text" id="organizationTitle" name="organizationTitle" required title="Your organizational title" pattern="[A-Za-z\s-]{7,}" autocomplete="organization-title" placeholder="Manager">
-        </label><br>
-
-        <!-- Email Address -->
-        <label for="email" title="Enter your email address">
-            Email:
-            <input type="email" id="email" name="email" required autocomplete="email" title="Your email address" placeholder="example@example.com">
-        </label><br>
-
-        <!-- Mobile Phone Number -->
-        <label for="phone" title="Enter your mobile phone number">
-            Mobile Phone:
-            <input type="tel" id="phone" name="phone" required autocomplete="tel" title="Your mobile phone number" placeholder="123-456-7890">
-        </label><br>
-
-        <!-- Business Name -->
-        <label for="businessName" title="Enter your business name">
-            Business Name:
-            <input type="text" id="business" name="business" required autocomplete="organization" title="Your business name" placeholder="Acme Corp">
-        </label><br>
-
-        <!-- Membership Level -->
-        <label for="membershipLevel" title="Select your membership level">
-            Membership Level:
-            <select name="membershipLevel" id="membershipLevel" required>
-            <option value="" disabled selected>Select your membership level</option>    
-            <option value="NP">NP Membership (Non-Profit)</option>
-            <option value="Bronze">Bronze Membership</option>
-            <option value="Silver">Silver Membership</option>
-            <option value="Gold">Gold Membership</option>
-            </select>
-        </label><br>
-
-        <!-- Business Description -->
-        <label for="description" title="Describe your business">
-            Business Description:
-            <textarea name="description" id="description" title="Your business description"></textarea>
-        </label><br>
-
-        <!-- Timestamp (Hidden) -->
-        <input type="hidden" name="timestamp" id="timestamp">
-
-        <!-- Submit Button -->
-        <button type="submit">Submit</button>
-        </form>
-        <div class="membership-cards">
-            <div class="card" id="npCard">
-                <h3>NP Membership</h3>
-                <p>No Fee</p>
-                <a href="#" onclick="openModal('npModal')">Learn More</a>
-            </div>
-
-            <div class="card" id="bronzeCard">
-                <h3>Bronze Membership</h3>
-                <p>Basic Level</p>
-                <a href="#" onclick="openModal('bronzeModal')">Learn More</a>
-            </div>
-
-            <div class="card" id="silverCard">
-                <h3>Silver Membership</h3>
-                <p>Intermediate Level</p>
-                <a href="#" onclick="openModal('silverModal')">Learn More</a>
-            </div>
-
-            <div class="card" id="goldCard">
-                <h3>Gold Membership</h3>
-                <p>Premium Level</p>
-                <a href="#" onclick="openModal('goldModal')">Learn More</a>
-            </div>
-        </div>
-
-            <!-- Modals -->
-        <div id="npModal" class="modal">
-            <div class="modal-content">
-                <span class="close" onclick="closeModal('npModal')">&times;</span>
-                <h2>NP Membership Benefits</h2>
-                <p>Non-profit organizations receive access to special event discounts and community outreach programs.</p>
-            </div>
-        </div>
-
-        <div id="bronzeModal" class="modal">
-            <div class="modal-content">
-                <span class="close" onclick="closeModal('bronzeModal')">&times;</span>
-                <h2>Bronze Membership Benefits</h2>
-                <p>Access to our basic network and basic event advertising.</p>
-            </div>
-        </div>
-
-        <div id="silverModal" class="modal">
-            <div class="modal-content">
-                <span class="close" onclick="closeModal('silverModal')">&times;</span>
-                <h2>Silver Membership Benefits</h2>
-                <p>Discounts on events, advertising, and access to our premium resources.</p>
-            </div>
-        </div>
-
-        <div id="goldModal" class="modal">
-            <div class="modal-content">
-                <span class="close" onclick="closeModal('goldModal')">&times;</span>
-                <h2>Gold Membership Benefits</h2>
-                <p>Exclusive VIP event access, spotlight positions, and extensive discounts.</p>
-            </div>
-        </div>    
+                <label for="lastName" title="Enter your last name">
+                    Last Name:
+                    <input type="text" id="lastName" name="lastName" required autocomplete="family-name" title="Your last name" placeholder="Doe">
+                </label><br>
+        
+                
+                <label for="organizationTitle" title="Enter your organizational title">
+                    Organizational Title:
+                    <input type="text" id="organizationTitle" name="organizationTitle" required title="Your organizational title" pattern="[A-Za-z\s-]{7,}" autocomplete="organization-title" placeholder="Manager">
+                </label><br>
+        
+                <!-- Email Address -->
+                <label for="email" title="Enter your email address">
+                    Email:
+                    <input type="email" id="email" name="email" required autocomplete="email" title="Your email address" placeholder="example@example.com">
+                </label><br>
+        
+                <!-- Mobile Phone Number -->
+                <label for="phone" title="Enter your mobile phone number">
+                    Mobile Phone:
+                    <input type="tel" id="phone" name="phone" required autocomplete="tel" title="Your mobile phone number" placeholder="123-456-7890">
+                </label><br>
+        
+                <!-- Business Name -->
+                <label for="businessName" title="Enter your business name">
+                    Business Name:
+                    <input type="text" id="business" name="business" required autocomplete="organization" title="Your business name" placeholder="Acme Corp">
+                </label><br>
+        
+                <!-- Membership Level -->
+                <label for="membershipLevel" title="Select your membership level">
+                    Membership Level:
+                    <select name="membershipLevel" id="membershipLevel" required>
+                    <option value="" disabled selected>Select your membership level</option>    
+                    <option value="NP">NP Membership (Non-Profit)</option>
+                    <option value="Bronze">Bronze Membership</option>
+                    <option value="Silver">Silver Membership</option>
+                    <option value="Gold">Gold Membership</option>
+                    </select>
+                </label><br>
+        
+                <!-- Business Description -->
+                <label for="description" title="Describe your business">
+                    Business Description:
+                    <textarea name="description" id="description" title="Your business description"></textarea>
+                </label><br>
+        
+                <!-- Timestamp (Hidden) -->
+                <input type="hidden" name="timestamp" id="timestamp">
+        
+                <!-- Submit Button -->
+                <button type="submit">Submit</button>
+                </form>
+                <div class="membership-cards">
+                    <div class="card" id="npCard">
+                        <h3>NP Membership</h3>
+                        <p>No Fee</p>
+                        <a href="#" onclick="openModal('npModal')">Learn More</a>
+                    </div>
+        
+                    <div class="card" id="bronzeCard">
+                        <h3>Bronze Membership</h3>
+                        <p>Basic Level</p>
+                        <a href="#" onclick="openModal('bronzeModal')">Learn More</a>
+                    </div>
+        
+                    <div class="card" id="silverCard">
+                        <h3>Silver Membership</h3>
+                        <p>Intermediate Level</p>
+                        <a href="#" onclick="openModal('silverModal')">Learn More</a>
+                    </div>
+        
+                    <div class="card" id="goldCard">
+                        <h3>Gold Membership</h3>
+                        <p>Premium Level</p>
+                        <a href="#" onclick="openModal('goldModal')">Learn More</a>
+                    </div>
+                </div>
+        
+                    <!-- Modals -->
+                    <div id="npModal" class="modal">
+                        <div class="modal-content">
+                            <span class="close" onclick="closeModal('npModal')">&times;</span>
+                            <h2>NP Membership Benefits</h2>
+                            <p>Price: Free</p>
+                            <p>Non-profit organizations receive access to special event discounts and community outreach programs.</p>
+                            <p><strong>Benefits include special events.</strong></p>
+                        </div>
+                    </div>
+                    
+                    <div id="bronzeModal" class="modal">
+                        <div class="modal-content">
+                            <span class="close" onclick="closeModal('bronzeModal')">&times;</span>
+                            <h2>Bronze Membership Benefits</h2>
+                            <p>Price:$25</p>
+                            <p>Access to our basic network and basic event advertising.</p>
+                            <p><strong>Include special training and advertising.</strong></p>
+                        </div>
+                    </div>
+                    
+                    <div id="silverModal" class="modal">
+                        <div class="modal-content">
+                            <span class="close" onclick="closeModal('silverModal')">&times;</span>
+                            <h2>Silver Membership Benefits</h2>
+                            <p>Price:$50</p>
+                            <p>Discounts on events, advertising, and training.</p>
+                            <p>Inclue one family member with benefits.</p>
+                            <p><strong>Access to our premium resources.</strong></p>
+                        </div>
+                    </div>
+                    
+                    <div id="goldModal" class="modal">
+                        <div class="modal-content">
+                            <span class="close" onclick="closeModal('goldModal')">&times;</span>
+                            <h2>Gold Membership Benefits</h2>
+                            <p>Price:$100</p>
+                            <p><strong>Exclusive VIP event access, spotlight positions, and extensive discounts.</strong></p>
+                            <p>Include benefits special events, training, advertising.</p>
+                            <p>Inclue all family members with benefits.</p>
+                        </div>
+                    </div>
+                    
+        </section>
     
     </main>
     
