@@ -115,10 +115,11 @@ aside {
 
 .hero-img {
     position: absolute;
-    width:100%;
+    width:90%;
+    justify-content: center;
     height: 120%;
     top: 0;
-    left: 0;
+    left: 50px;
     z-index: -1; 
     padding-bottom: 20px;
     border-radius: 8px;border: 2px solid #F5C32E;
@@ -189,6 +190,14 @@ article a {
     text-decoration: none;
     margin-top: 10px;
 }
+.wireframe img {
+    max-width: 100%; /* Ensures the image fits within the card */
+    height: auto; /* Keeps aspect ratio */
+    display: block; /* Removes extra spacing under images */
+    margin: 10px auto; /* Centers the image */
+    border-radius: 5px; /* Optional: Adds rounded corners for a cleaner look */
+}
+
 .site-info {
     grid-column: span 3;
     padding-top: 20px;
@@ -233,7 +242,22 @@ footer {
 
 @media (max-width: 740px) {
     main {
-        grid-template-columns: repeat(2, 1fr)
+        grid-template-columns: 1fr;
+    }
+    .categories, .skills-grid, .site-info {
+        display: block; /* Stack elements vertically */
+        width: 100%; /* Full width */
+        margin: 0 auto; /* Center elements */
+    }
+
+    .skills-grid {
+        display: flex;
+        flex-direction: column; /* Ensures articles stack in one column */
+        gap: 15px;
+    }
+
+    .skills-grid article, .site-info article {
+        width: 100%; /* Full width for better readability */
     }
 }
 

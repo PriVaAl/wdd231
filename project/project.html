@@ -7,7 +7,7 @@
     <meta name="author" content="Priscilla Valverde">
     <title>Site Plan | Priscilla Valverde | WDD 131 - Dynamic Web Fundamentals</title>
     <link rel="stylesheet" href="styles/project.css">
-    <script src="scripts/scripts.js" defer></script>
+    <script src="scripts/project.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&family=Georgia:wght@700&family=Verdana:wght@400&display=swap" rel="stylesheet">
@@ -67,24 +67,24 @@
         </section> 
         <section class="site-info">
             <article>
-                <h2>Site Name</h2>
+                <h2>Site Name</h2><br>
                 <p><strong>Soften Your Skills</strong></p>
                 <p>This name reflects the core theme of the project, emphasizing the development and enhancement of essential soft skills for personal and professional growth.</p>
                 <p>Optional domain availability: <em>softenyourskills.com</em></p>
             </article>
             <article>
-                <h2>Site Purpose</h2>
+                <h2>Site Purpose</h2><br>
                 <p>The site provides a platform for users to improve soft skills like communication, leadership, time management, teamwork, and emotional intelligence. It offers interactive tutorials, quizzes, and various learning resources to foster growth and application in real-life situations.</p>
             </article>
             <article>
-                <h2>Scenarios</h2>
+                <h2>Scenarios</h2><br>
                 <ul>
                     <li>1. How can I improve my leadership and communication skills effectively?</li>
                     <li>2. Where can I find resources to develop better time management and teamwork abilities?</li>
                 </ul>
             </article>
             <article>
-                <h2>Color Scheme</h2>
+                <h2>Color Scheme</h2><br>
                 <p><strong>Primary Color:</strong> <span style="color: #004085;">Deep Blue</span> - Used for headings and accents to promote focus and clarity.</p>
                 <p><strong>Secondary Color:</strong> <span style="color: #12542B;">Forest Green</span> - Used for buttons and hover effects to stimulate creativity and attention.</p>
                 <p><strong>Accent Color:</strong> <span style="color: #A81F00;">Red</span> - Used for call-to-action elements to enhance energy and motivation.</p>
@@ -93,7 +93,7 @@
             </article>
 
             <article>
-                <h2>Typography</h2>
+                <h2>Typography</h2><br>
                 <p><strong>Font Selections:</strong></p>
                 <ul>
                     <li><strong>Roboto:</strong> Used for body text for readability. <span style="font-family: 'Roboto', sans-serif;">Example text</span></li>
@@ -102,10 +102,10 @@
                 </ul>
             </article>
 
-            <article>
-                <h2>Wireframe</h2>
-                <p><strong>Mobile View:</strong> A vertical layout with a single column, featuring a header, skill categories, featured content, and a footer.</p>
-                <img src="images/mobileproject.png" alt="Mobile View">
+            <article class="wireframe">
+                <h2>Wireframe</h2> <br>
+                <p><strong>Mobile View:</strong> A vertical layout with a single column, featuring a header, hero image, banner then a horizontal layout with two columns with skill categories and aside, then the sigle colum featured content, and a footer.</p>
+                <img src="images/mobile-wireframe.png" alt="Mobile View">
                 <p><strong>Desktop View:</strong> A horizontal layout with multiple columns, including a header, a sidebar for navigation, main content with featured resources, and a footer.</p>
                 <img src="images/desktop-project.png" alt="Desktop View">
             </article>
@@ -113,7 +113,8 @@
     </main>
 
     <footer>
-        <p>&copy; 2025 Soft Skills Hub. All rights reserved.</p>
+        <p>&copy;<span id="currentYear"></span> 🌸 Priscilla Valverde Alvarez 🌸 Costa Rica</p>
+        <p id="lastModified">Last Update: <span id="lastModifiedDate"></span></p>
     </footer>
 </body>
 </html>
