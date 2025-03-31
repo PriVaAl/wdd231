@@ -322,6 +322,13 @@ section {
     margin: 30px;
     color:#fff;
 }
+.hero-text {
+    position: absolute; /* Position the text container absolutely within the parent (hero) */
+    top: 115%; /* Position the text container vertically in the middle */
+    left: 50%; /* Position the text container horizontally in the middle */
+    transform: translate(-50%, -50%); /* Center the button accurately */
+    z-index: 1;
+}
 
 .hero article img{
     float: right;
@@ -331,7 +338,7 @@ section {
 }
 
 .cta-button {
-    padding: 10px 20px;
+    padding: 15px 30px;
     background-color: var(--primary-color);
     color: #fff;
     text-decoration: none;
