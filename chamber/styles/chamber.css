@@ -527,6 +527,7 @@ footer nav a:hover {
         padding: 10px 15px;
 		flex: unset;
 	}
+    
 
 }
 @media (max-width: 740px) {
@@ -550,6 +551,23 @@ footer nav a:hover {
         width: 100%; /* Makes all cards take full width */
         max-width: 350px; /* Prevents cards from being too wide */
     }
+    .hero {
+        text-align: center;
+    }
+
+    .hero-text {
+        position: absolute;
+        top: 50%; /* Adjust the position lower to prevent overlap */
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 80%; /* Ensures proper spacing */
+    }
+
+    .cta-button {
+        font-size: 1rem;
+        padding: 8px 16px;
+    }
+    
 
     footer  {
         flex-direction: column;
