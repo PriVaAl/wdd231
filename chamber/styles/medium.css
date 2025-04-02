@@ -1,0 +1,93 @@
+@media only screen and (min-width: 641px) and (max-width: 1024px) {
+    #allplaces div {
+        
+        grid-template-areas: 
+        "image name"
+        "image description"
+        "image address"
+        "image button";
+    }
+
+    #allplaces div img {
+        width: 300px;
+        
+    }
+
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 20px;
+    }
+    
+
+    #menu {
+		display: none; 
+	}
+
+	.navigation {
+        display: flex;
+		flex-direction: row;
+        justify-content: space-around;
+        gap: 20px;
+	}
+
+	.navigation a {
+		display: block;
+        padding: 10px 15px;
+		flex: unset;
+	}
+    
+}
+@media (min-width: 640px) {
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 20px;
+    }
+
+    #menu {
+		display: none; 
+	}
+
+	.navigation {
+        display: flex;
+		flex-direction: row;
+        justify-content: space-around;
+        gap: 20px;
+	}
+
+	.navigation a {
+		display: block;
+        padding: 10px 15px;
+		flex: unset;
+	}
+    
+    
+    .cta-button {
+        font-size: 1rem;
+        padding: 8px 16px;
+    }
+
+    
+}
+@media (max-width: 640px) {
+    footer  {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    footer div {
+        margin-bottom: 10px;
+    }
+
+    .social-links {
+        justify-content: center;
+    }
+    #allplaces div img:hover {
+        transform: none;
+        filter: none;
+    }
+}
