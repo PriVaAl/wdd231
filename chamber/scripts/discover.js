@@ -25,10 +25,12 @@ function displayItems(places) {
         thecard.appendChild(thedescription)
 
         const thebutton = document.createElement('button');
-        thebutton.innerText = x.button;
+        thebutton.innerText = "Learn More";
         thebutton.addEventListener("click", () => {
-            alert(`You clicked on ${x.name}`);
+            thebutton.addEventListener("click", () => {
+                window.open(x.link, "_blank");
             });
+        });
         thecard.appendChild(thebutton);
 
         showHere.appendChild(thecard)
