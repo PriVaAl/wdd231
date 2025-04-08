@@ -101,6 +101,10 @@ h2 {
     font-family: 'Georgia', serif;
 }
 
+.active::before {
+	content: "🧠";  
+}
+
 aside {
     background-color: var(--primary-color);
     padding: 0.5rem;
@@ -155,67 +159,124 @@ aside {
     width: 80%;
 }
 
-main {
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    gap: 20px;
-    max-width: 1200px;
-    margin: 20px auto;
-    padding: 20px;
+#allskills div img:hover {
+    transform: scale(1.05);
 }
-.categories {
-    background: var(--primary-color);
-    padding: 20px;
-    color: white;
-    border-radius: 8px;
-    border: 2px solid var(--accent-color);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+
+
+.card button:hover {
+    background: #0056b3;
 }
-.skills-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-    max-width: 200px;
-}
-article {
+
+#allskills div {
+    margin: 1rem 8px;
     background: white;
     padding: 20px;
     border-radius: 8px;border: 2px solid #F5C32E;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-article a {
-    display: block;
-    color: var(--hover-color);
-    font-weight: bold;
-    text-decoration: none;
-    margin-top: 10px;
-}
-.wireframe img {
-    max-width: 100%; /* Ensures the image fits within the card */
-    height: auto; /* Keeps aspect ratio */
-    display: block; /* Removes extra spacing under images */
-    margin: 10px auto; /* Centers the image */
-    border-radius: 5px; /* Optional: Adds rounded corners for a cleaner look */
-}
-
-.site-info {
-    grid-column: span 3;
-    padding-top: 20px;
+    overflow: hidden;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    padding-top: 20px;
-}
-footer {
-    background-color: var(--primary-color);
-    color: white;
-    text-align: center;
-    padding: 20px;
-    margin-top: 20px;
+    grid-template-areas: 
+    "title"
+    "description"
+    "image"
+    "importance"
+    "button";
+
 }
 
-/* Responsive Styles */
-@media (min-width: 740px) {
+#allskills div h3 {
+    font-size: 1.5em;
+    margin: 1rem 16px;
+    grid-area: title;
+}
+
+#allskills div img {
+    width: 100%;
+    grid-area: image;
+}
+
+
+#allskills div p {
+    margin: 1rem 10px;
+    grid-area: description;
+    
+}
+
+#allskills div importance {
+    font-style: italic;
+    grid-area: importance;
+}
+
+#allskills div button {
+    grid-area: button;
+    background: #0056b3;
+    width: 90%;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    margin: 10px auto;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 12px;
+    transition: background 0.3s;
+    
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    color: white;
+    background-color: var(--primary-color);
+    width: 100%;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+}
+
+footer p {
+    margin: 0;
+    flex: 1;
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+}
+
+.social-links{
+    display: flex;
+    gap: 10px;
+}
+
+.social-links a {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    justify-content: center;
+}
+
+.social-links img {
+    width: 25px;
+    height: 25px;
+}
+
+footer nav a {
+    color: #fff; 
+    text-decoration: none;
+}
+
+footer nav a:hover {
+    text-decoration: underline;
+}
+
+#lastModified {
+    font-size: 1rem;
+    color: #FAF2D1;
+    font-weight: bold;
+}
+
+@media only screen and (min-width: 38rem) {
     header {
         padding: 15px 30px;
     }
@@ -238,37 +299,30 @@ footer {
         display: inline-block;
         padding: 10px;
     }
-}
 
-@media (max-width: 740px) {
-    main {
-        grid-template-columns: 1fr;
-    }
-    .categories, .skills-grid, .site-info {
-        display: block; /* Stack elements vertically */
-        width: 100%; /* Full width */
-        margin: 0 auto; /* Center elements */
-    }
-
-    .skills-grid {
-        display: flex;
-        flex-direction: column; /* Ensures articles stack in one column */
-        gap: 15px;
+    #allskills div {
+        
+        grid-template-areas: 
+        "title ."
+        "image description"
+        "image importance"
+        "button button";
+        grid-template-columns: auto 1fr;
     }
 
-    .skills-grid article, .site-info article {
-        width: 100%; /* Full width for better readability */
+    #allskills div img {
+        width: 300px;
+        
+    }
+    #allskills div button {
+        justify-self: center;
     }
 }
-
-@media (min-width: 741px) and (max-width: 1024px) {
-    main {
-        grid-template-columns: 1fr;
-    }
-}
-
-@media (min-width: 1025px) {
-    main {
-        grid-template-columns: repeat(3, 1fr);
-    }
+@media only screen and (min-width: 64rem) {
+    #allskills {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    
+     }
+     
 }

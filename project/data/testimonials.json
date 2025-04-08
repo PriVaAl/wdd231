@@ -1,0 +1,50 @@
+{
+    "testimonials": [
+      {
+        "name": "Ana Martínez",
+        "role": "Project Manager",
+        "testimonial": "Developing my communication and leadership skills has completely transformed the way I manage teams. It's helped me lead more effectively and build stronger relationships with my colleagues."
+      },
+      {
+        "name": "Carlos López",
+        "role": "Software Developer",
+        "testimonial": "Improving my problem-solving and teamwork abilities has allowed me to collaborate much better with my peers. These skills are essential in every project we work on."
+      },
+      {
+        "name": "Laura González",
+        "role": "Marketing Specialist",
+        "testimonial": "Enhancing my emotional intelligence has made me more attuned to my team's needs and concerns. It's made me a more empathetic leader, which has improved our productivity."
+      },
+      {
+        "name": "Javier Ruiz",
+        "role": "Sales Executive",
+        "testimonial": "Through developing my negotiation and active listening skills, I've been able to close more deals and build trust with clients. It's been a game-changer in my career."
+      },
+      {
+        "name": "Sofía Hernández",
+        "role": "Customer Support Specialist",
+        "testimonial": "My conflict resolution skills have grown immensely, allowing me to handle challenging situations with clients calmly and professionally. It’s made my job much more rewarding."
+      },
+      {
+        "name": "Ricardo Pérez",
+        "role": "Product Designer",
+        "testimonial": "By focusing on adaptability and creativity, I’ve been able to think outside the box and find new, innovative solutions to design challenges."
+      },
+      {
+        "name": "Martina Sánchez",
+        "role": "HR Manager",
+        "testimonial": "Developing my interpersonal and decision-making skills has helped me build stronger relationships with employees, making HR processes smoother and more efficient."
+      },
+      {
+        "name": "Luis García",
+        "role": "Business Analyst",
+        "testimonial": "Improving my time management and organizational skills has helped me juggle multiple tasks more efficiently and deliver better results for the company."
+      },
+      {
+        "name": "Isabel Torres",
+        "role": "Content Writer",
+        "testimonial": "Through active listening and constructive feedback, I’ve learned how to better collaborate with my team, and this has helped me produce higher-quality content for our clients."
+      }
+    ]
+  }
+  

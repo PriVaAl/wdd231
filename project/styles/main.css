@@ -25,6 +25,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 h1 {
     color: white;
@@ -40,6 +41,31 @@ h3 {
 aside h3 {
     color: white;
 }
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    width: 15%;
+    height: auto;
+    margin-right: 10px;
+}
+
+.title h2{
+    font-size: 1.5rem;
+    margin: 0;
+    columns:white;
+}
+
+.title p {
+    font-size: 0.875rem;
+    color: var(--text-color);
+    margin: 0;
+    
+}
+
 /* Navigation */
 #menu {
     font-size: 1.5rem;
@@ -101,10 +127,28 @@ h2 {
     font-family: 'Georgia', serif;
 }
 
+.active::before {
+	content: "🧠";  
+}
+
+.main-layout {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Corrected grid layout */
+    gap: 20px;
+    margin: 0 auto;
+}    
+
+.why-soft-skills {
+    grid-column: span 2; /* Make it span both columns if needed */
+}
+
 aside {
     background-color: var(--primary-color);
     padding: 0.5rem;
+
 }
+
+
 
 .intro {
     position: relative;
@@ -124,6 +168,21 @@ aside {
     padding-bottom: 20px;
     border-radius: 8px;border: 2px solid #F5C32E;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.hero-text {
+    position: absolute; /* Position the text container absolutely within the parent (hero) */
+    top: 105%; /* Position the text container vertically in the middle */
+    left: 50%; /* Position the text container horizontally in the middle */
+    transform: translate(-50%, -50%); /* Center the button accurately */
+    z-index: 1;
+}
+.cta-button {
+    padding: 15px 30px;
+    background-color: var(--primary-color);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
 }
 
 .intro h2, .intro p {
@@ -156,12 +215,8 @@ aside {
 }
 
 main {
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    gap: 20px;
-    max-width: 1200px;
-    margin: 20px auto;
     padding: 20px;
+
 }
 .categories {
     background: var(--primary-color);
@@ -172,11 +227,17 @@ main {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .skills-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
     gap: 20px;
-    max-width: 200px;
+    max-width: 600px;
+    grid-template-columns: repeat(3, 1fr);
 }
+.info-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);  /* 3 equal-width columns */
+    gap: 20px;  /* Space between columns */
+    margin-top: 20px;
+}
+
 article {
     background: white;
     padding: 20px;
@@ -190,6 +251,48 @@ article a {
     text-decoration: none;
     margin-top: 10px;
 }
+
+.spotlights {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.spotlight-title{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.spotlight-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 equal-width columns */
+    gap: 20px;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.spotlight-card {
+    background-color: #f4f4f4;
+    padding: 15px;
+    border-radius: 8px;border: 2px solid #F5C32E;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+}
+
+.spotlight-card h3 {
+    margin: 10px 0;
+    font-size: 1.2em;
+}
+
+.spotlight-card p {
+    color: #333;
+}
+
+
+
 .wireframe img {
     max-width: 100%; /* Ensures the image fits within the card */
     height: auto; /* Keeps aspect ratio */
@@ -206,12 +309,56 @@ article a {
     gap: 20px;
     padding-top: 20px;
 }
-footer {
-    background-color: var(--primary-color);
-    color: white;
-    text-align: center;
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 20px;
-    margin-top: 20px;
+    color: white;
+    background-color: var(--primary-color);
+    width: 100%;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+}
+
+footer p {
+    margin: 0;
+    flex: 1;
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+}
+
+.social-links{
+    display: flex;
+    gap: 10px;
+}
+
+.social-links a {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    justify-content: center;
+}
+
+.social-links img {
+    width: 25px;
+    height: 25px;
+}
+
+footer nav a {
+    color: #fff; 
+    text-decoration: none;
+}
+
+footer nav a:hover {
+    text-decoration: underline;
+}
+
+#lastModified {
+    font-size: 1rem;
+    color: #FAF2D1;
+    font-weight: bold;
 }
 
 /* Responsive Styles */
@@ -259,6 +406,16 @@ footer {
     .skills-grid article, .site-info article {
         width: 100%; /* Full width for better readability */
     }
+    .spotlight-cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .spotlight-cards > div {
+        width: 100%; /* Makes all cards take full width */
+        max-width: 350px; /* Prevents cards from being too wide */
+    }
 }
 
 @media (min-width: 741px) and (max-width: 1024px) {
@@ -272,3 +429,7 @@ footer {
         grid-template-columns: repeat(3, 1fr);
     }
 }
+
+
+
+
