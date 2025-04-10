@@ -35,7 +35,7 @@ async function displaySpotlight() {
         console.log("Testimonials Data:", data); // Check the data in the console
 
         // Randomly select 3 testimonials
-        const selectedTestimonials = data.testimonials.sort(() => 0.5 - Math.random()).slice(0, 3);
+        const selectedTestimonials = data.testimonials.sort(() => 0.5 - Math.random()).slice(0, 4);
         console.log("Selected Testimonials:", selectedTestimonials);
 
         // Get the spotlight container element
