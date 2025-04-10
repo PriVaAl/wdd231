@@ -63,3 +63,95 @@ async function displaySpotlight() {
 
 // Call the function to display the spotlight testimonials
 displaySpotlight();
+
+document.addEventListener('DOMContentLoaded', function () {
+    const gridButton = document.querySelector("#grid");
+    const listButton = document.querySelector("#list");
+    const resourcesContainer = document.querySelector("#resources");
+
+    if (!gridButton || !listButton || !resourcesContainer) {
+        console.error("Error: One or more elements (#grid, #list, #resources) not found.");
+        return;
+    }
+
+    resourcesContainer.classList.add('grid');
+
+    gridButton.addEventListener('click', () => {
+        resourcesContainer.classList.add('grid');
+        resourcesContainer.classList.remove('list');
+    });
+
+    listButton.addEventListener('click', () => {
+        resourcesContainer.classList.add('list');
+        resourcesContainer.classList.remove('grid');
+    });
+});
+
+const url = "data/resources.json"; 
+const resourcesContainer = document.getElementById("resources");
+
+if (!resourcesContainer) {
+    console.error("Error: #resources container not found.");
+}
+
+async function getResources() {
+    try {
+        const response = await fetch(url);
+        if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);
+        const data = await response.json();
+        displayResources(data.resources);
+    } catch (error) {
+        console.error("Error fetching resources data:", error);
+    }
+}
+
+function displayResources(resources) {
+    const resourcesContainer = document.getElementById("resources");
+
+    if (!resourcesContainer) {
+        console.error("Error: #resources container not found in the DOM.");
+        return;
+    }
+
+    resources.forEach(resource => {
+        const card = document.createElement("section");
+        card.classList.add("skills-card");
+
+        const skill = document.createElement("h2");
+        skill.textContent = resource.skill;
+        skill.classList.add("resource-skill");
+
+        const type = document.createElement("h3");
+        type.textContent = resource.type;
+
+        const company = document.createElement("p");
+        company.textContent = resource.company;
+
+        const description = document.createElement("p");
+        description.textContent = resource.description;
+
+        const website = document.createElement("a");
+        website.href = resource.website ? resource.website : "#";
+        website.textContent = "🌍 Visit Website";
+        website.target = "_blank";
+
+        const image = document.createElement("img");
+        image.setAttribute("src", resource.image ? `images/${resource.image}` : "images/default-placeholder.png");
+        image.setAttribute("alt", `${resource.skill} logo`);
+        image.setAttribute("loading", "lazy");
+        image.setAttribute("width", "150");
+        image.setAttribute("height", "150");
+
+        card.appendChild(image);
+        card.appendChild(skill);
+        card.appendChild(type);
+        card.appendChild(company);
+        card.appendChild(description);
+        card.appendChild(website);
+
+        resourcesContainer.appendChild(card);
+    });
+}
+
+getResources();
+

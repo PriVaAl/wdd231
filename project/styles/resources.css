@@ -221,294 +221,134 @@ main {
     padding: 20px;
 
 }
-.categories {
-    background: var(--primary-color);
-    padding: 20px;
-    color: white;
-    border-radius: 8px;
-    border: 2px solid var(--accent-color);
+
+#resources section {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    background: #f9f9f9;
+    border-radius: 8px;border: 2px solid #F5C32E;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+.menu-b {
+	margin: 1rem auto;
+	padding: 0.5rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-.skills-grid {
-    gap: 20px;
-    max-width: 600px;
-    grid-template-columns: repeat(3, 1fr);
+.menu-b button {
+	padding: 1rem;
+	font-weight: 700;
 }
-.info-container{
+
+.grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);  /* 3 equal-width columns */
-    gap: 20px;  /* Space between columns */
-    margin-top: 20px;
-}
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    
+  } 
 
-article {
-    background: white;
-    padding: 20px;
-    border-radius: 8px;border: 2px solid #FF6F00;
+.resources {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	grid-gap: 1rem;
+	align-items: center;
+    padding: 1rem;
+    border-radius: 8px;border: 2px solid #F5C32E;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-article a {
-    display: block;
-    color: var(--hover-color);
-    font-weight: bold;
-    text-decoration: none;
-    margin-top: 10px;
+
+
+.grid img {
+	border: 1px solid #fff;
+	box-shadow: 0 0 10px #333;
+    width: 100px;
+    height: auto;
+    
 }
 
-.spotlights {
+.grid section > * {
+	margin: 0.1rem;
+}
+
+#skills.list {
+	display: flex;
+	flex-direction: column;
+    gap: 1rem;
+}
+
+.list section {
+	display: grid;
+	grid-template-columns: 2fr 1fr 1fr;
+	margin: 0;
+	padding: 0.25rem;
+}
+
+.list section > * {
+	margin: 0 1rem;
+}
+
+.list section img {
+	display: none; /* smaller viewports only */
+}
+
+.list section h3 {
+	font-size: 1rem;
+}
+
+.list section:nth-child(even) {
+	background-color: #bed;
+}
+
+.list-view {
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    margin-top: 20px;
-    text-align: center;
 }
 
-.spotlight-title{
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: var(--primary-color);
+.list-view .skills-card {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    padding: 15px;
+    gap: 15px;
 }
 
-.spotlight-cards {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 equal-width columns */
-    gap: 20px;
-    max-width: 1300px;
-    margin: 0 auto;
+.list-view .skills-card img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 5px;
 }
-
-.spotlight-card {
-    background-color: #f4f4f4;
+.list-view .skills-card h3 {
+    font-size: 1.2rem;
+    margin: 0;
+}
+.skills-card{
+    background-color: var(--card-bg);
     padding: 15px;
     border-radius: 8px;border: 2px solid #F5C32E;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.spotlight-card h3 {
-    margin: 10px 0;
+.skills-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 4px 4px 15px var(--card-shadow);
+}
+
+.skills-card img{
+    max-width: 100px;
+    height: 100px;
+    border-radius: 5px;
+}
+
+.skills-card h3 {
+    margin-top: 10px;
     font-size: 1.2em;
 }
 
-.spotlight-card p {
-    color: #333;
-}
-
-
-.site-info {
-    grid-column: span 3;
-    padding-top: 20px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    padding-top: 20px;
-}
-.container {
-    display: grid;
-    grid-template-columns: 2fr 1fr; /* Two equal columns */
-    gap: 20px;
-    padding: 30px;
-  }
-
-form {
-    max-width: 600px;
-    margin: 20px;
-    padding: 20px;
-    background-color: #330D59;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
-  
-label {
-    display: block;
-    font-size: 1.1em;
-    margin-bottom: 8px;
-    color: #fff;
-}
-  
-input, select, textarea {
-    width: 100%;
-    padding: 10px;
-    margin: 8px 0 16px 0;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    font-size: 1em;
-}
-  
-input:focus, select:focus, textarea:focus {
-    border-color: #0056b3;
-    outline: none;
-    box-shadow: 0 0 5px rgba(0, 86, 179, 0.4);
-    transition: border-color 0.3s ease, box-shadow 0.3s ease;
-}
-
-.cardsk-container .cardsk {
-    display: inline-block;
-    width: 22%;
-    margin: 0;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 8px;border: 2px solid #F5C32E;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    opacity: 0;
-    animation: fadeIn 1s ease-in forwards;
-}
-  
-@keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-}
-  
-  /* Submit Button */
-button[type="submit"] {
-    padding: 12px 20px;
-    background-color: #0056b3;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1.1em;
-    width: 100%;
-}
-  
-button[type="submit"]:hover {
-    background-color: #004080;
-    transition: background-color 0.3s ease;
-}
-  
-  /* Modal Styles */
-.modal {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 8px;border: 2px solid #F5C32E;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    justify-content: center;
-    align-items: center;
-}
-  
-.modal-content {
-    background-color: #fff;
-    padding: 30px;
-    border-radius: 8px;border: 2px solid #F5C32E;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    max-width: 500px;
-    width: 90%;
-}
-  
-.modal.open {
-    display: flex;
-}
-
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgb(0,0,0);
-  background-color: rgba(0,0,0,0.4);
-  padding-top: 60px;
-}
-
-.modal-content {
-  background-color: #fefefe;
-  margin: 5% auto;
-  padding: 30px;
-  border: 1px solid #888;
-  width: 80%;
-}
-
-.close {
-  color: #aaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
-}
-.skill-cards {
-  padding-top: 30px;
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-}
-.cardsk {
-  background-color: #f4f4f4;
-  border: #330D59;
-  padding: 20px;
-  border-radius: 8px;
-  height:auto;
-  width: 90%;
-  border-radius: 8px;border: 2px solid #F5C32E;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  text-align: center;
-  opacity: 0;
-  transition: opacity 1s ease-out;
-}
-
-.cardsk h3 {
-  font-size: 1.5rem;
-  margin-bottom: 10px;
-}
-
-.cardsk a {
-  text-decoration: none;
-  color: #004A99;
-}
-
-.cardsk:hover {
-  background-color: #e0e0e0;
-}
-
-
-.thank-you-info {
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 2rem;
-    max-width: 700px;
-    margin: 0 auto;
-}
-
-.thank-you-info p {
-    font-size: 1.1rem;
-    margin: 10px 0;
-    color: #555;
-}
-
-.thank-you-info p span {
-    font-weight: bold;
-    color: #004d6b;
-}
-
-.thank-you-info .back-to-home {
-    margin-top: 2rem;
-    font-size: 1.2rem;
-}
-
-.thank-you-info .back-to-home a {
-    text-decoration: none;
-    color: #004d6b;
-}
-
-.thank-you-info .back-to-home a:hover {
-    text-decoration: underline;
-}
-.thank-you-info .back-to-home a:visited {
-    color: #004d6b;
+.skills-card p {
+    margin: 5px 0;
 }
 
 footer{
@@ -591,7 +431,11 @@ footer nav a:hover {
 
 @media (max-width: 740px) {
     main {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    h2 {
+        grid-column: span 1;
     }
     .categories, .skills-grid, .site-info {
         display: block; /* Stack elements vertically */
@@ -649,10 +493,13 @@ footer nav a:hover {
 
 }
 
-
 @media (min-width: 741px) and (max-width: 1024px) {
     main {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    h2 {
+        grid-column: span 2;
     }
 }
 
@@ -660,8 +507,7 @@ footer nav a:hover {
     main {
         grid-template-columns: repeat(3, 1fr);
     }
+    h2 {
+        grid-column: span 3;
+    }
 }
-
-
-
-

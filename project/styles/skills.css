@@ -290,6 +290,25 @@ footer nav a:hover {
     font-weight: bold;
 }
 
+#visitor-message {
+    padding: 20px;
+    background-color: #fffae5; /* Light background for visibility */
+    border: 1px solid #ffcc00; /* Yellow border */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    width: 60%;
+    margin: 0 auto;
+}
+
+#visitor-message p {
+    margin: 0;
+    font-weight: bold;
+    color: #333;
+}
+
+
 @media only screen and (min-width: 38rem) {
     header {
         padding: 15px 30px;

@@ -39,3 +39,4 @@ document.getElementById("yourForm").addEventListener("submit", function(e) {
     // Redirect to the Thank You page with form data as query parameters
     window.location.href = `thankyou.html?firstName=${encodeURIComponent(firstName)}&lastName=${encodeURIComponent(lastName)}&email=${encodeURIComponent(email)}&phone=${encodeURIComponent(phone)}&timestamp=${encodeURIComponent(timestamp)}`;
 });
+

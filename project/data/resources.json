@@ -1,0 +1,69 @@
+{
+    "resources": [
+      {
+        "skill": "Communication",
+        "type": "Video",
+        "company": "LinkedIn Learning",
+        "description": "Improve your communication skills with expert-led video courses designed for professionals.",
+        "image": "https://media.licdn.com/dms/image/C4E0BAQFThd2OE0e0qw/company-logo_200_200/0/1630656023593?e=2147483647&v=beta&t=E4IqQk5jGa-JTRmqQ3gXYJ1n_MnAwO_Gb8_fHqAZbD4",
+        "url": "https://www.linkedin.com/learning/topics/communication"
+      },
+      {
+        "skill": "Leadership",
+        "type": "Class",
+        "company": "Coursera",
+        "description": "Leading Teams is an online course focusing on developing effective leadership strategies for managing teams.",
+        "image": "https://d3njjcbhbojbot.cloudfront.net/web/images/favicons/coursera-favicon.ico",
+        "url": "https://www.coursera.org/learn/leading-teams"
+      },
+      {
+        "skill": "Problem-Solving",
+        "type": "Course",
+        "company": "edX",
+        "description": "edX offers courses on Problem-Solving and Critical Thinking Skills to enhance analytical and decision-making abilities.",
+        "image": "https://prod-discovery.edx-cdn.org/media/course/image/5db68dd2-2d3b-4071-a47c-570024f46c71-d8e93b3b3a3b.small.png",
+        "url": "https://www.edx.org/learn/problem-solving"
+      },
+      {
+        "skill": "Time Management",
+        "type": "Tutoring/Coaching",
+        "company": "Coach.me",
+        "description": "Coach.me provides personalized coaching services to help improve time management skills through one-on-one sessions.",
+        "image": "https://coach.me/assets/img/favicons/favicon-96x96.png",
+        "url": "https://www.coach.me/leadership"
+      },
+      {
+        "skill": "Emotional Intelligence",
+        "type": "Book",
+        "company": "Daniel Goleman",
+        "description": "Emotional Intelligence: Why It Can Matter More Than IQ explores the importance of emotional intelligence.",
+        "image": "https://images.penguinrandomhouse.com/cover/9780553383713",
+        "url": "https://www.penguinrandomhouse.com/books/69105/emotional-intelligence-by-daniel-goleman/"
+      },
+      {
+        "skill": "Awareness & Mindset Skills",
+        "type": "TED Talk",
+        "company": "Carol Dweck",
+        "description": "Carol Dweck's TED Talk on growth mindset and the power of believing that you can improve.",
+        "image": "https://pi.tedcdn.com/r/talkstar-assets.s3.amazonaws.com/production/playlists/playlist_79/playlist-cover/1-growth_mindset.jpg?c=1050%2C550&w=1050",
+        "url": "https://www.ted.com/talks/carol_dweck_the_power_of_believing_that_you_can_improve"
+      },
+      {
+        "skill": "Communication Skills",
+        "type": "Online Course",
+        "company": "FutureLearn",
+        "description": "FutureLearn offers a variety of courses to develop communication skills for personal and professional growth, including topics like public speaking, persuasive writing, and team collaboration.",
+        "website": "https://www.futurelearn.com/subjects/business-and-management-courses/communication",
+        "image": "futurelearn-logo.png"
+      },
+      {
+        "skill": "Awareness & Mindset Skills",
+        "type": "Webinar",
+        "company": "Mindful.org",
+        "description": "Mindful.org offers webinars to enhance self-awareness and cultivate a positive mindset.",
+        "image": "https://www.mindful.org/wp-content/uploads/2018/03/mindful-logo.jpg",
+        "url": "https://www.mindful.org/mindfulness-meditation-guided-practices/"
+      }
+    ]
+  }
+  
