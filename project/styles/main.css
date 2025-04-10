@@ -295,15 +295,6 @@ article a {
 }
 
 
-
-.wireframe img {
-    max-width: 100%; /* Ensures the image fits within the card */
-    height: auto; /* Keeps aspect ratio */
-    display: block; /* Removes extra spacing under images */
-    margin: 10px auto; /* Centers the image */
-    border-radius: 5px; /* Optional: Adds rounded corners for a cleaner look */
-}
-
 .site-info {
     grid-column: span 3;
     padding-top: 20px;
@@ -312,6 +303,212 @@ article a {
     gap: 20px;
     padding-top: 20px;
 }
+.container {
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* Two equal columns */
+    gap: 20px;
+    padding: 30px;
+  }
+
+form {
+    max-width: 600px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #330D59;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+  
+label {
+    display: block;
+    font-size: 1.1em;
+    margin-bottom: 8px;
+    color: #fff;
+}
+  
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0 16px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1em;
+}
+  
+input:focus, select:focus, textarea:focus {
+    border-color: #0056b3;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 86, 179, 0.4);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cardsk-container .cardsk {
+    display: inline-block;
+    width: 22%;
+    margin: 0;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;border: 2px solid #F5C32E;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    opacity: 0;
+    animation: fadeIn 1s ease-in forwards;
+}
+  
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+  
+  /* Submit Button */
+button[type="submit"] {
+    padding: 12px 20px;
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    width: 100%;
+}
+  
+button[type="submit"]:hover {
+    background-color: #004080;
+    transition: background-color 0.3s ease;
+}
+  
+  /* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;border: 2px solid #F5C32E;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    justify-content: center;
+    align-items: center;
+}
+  
+.modal-content {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;border: 2px solid #F5C32E;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    max-width: 500px;
+    width: 90%;
+}
+  
+.modal.open {
+    display: flex;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+  padding-top: 60px;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto;
+  padding: 30px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+.skill-cards {
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.cardsk {
+  background-color: #f4f4f4;
+  border: #330D59;
+  padding: 20px;
+  border-radius: 8px;
+  height:auto;
+  width: 90%;
+  border-radius: 8px;border: 2px solid #F5C32E;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+  opacity: 0;
+  transition: opacity 1s ease-out;
+}
+
+.cardsk h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.cardsk a {
+  text-decoration: none;
+  color: #004A99;
+}
+
+.cardsk:hover {
+  background-color: #e0e0e0;
+}
+
+.thank-you-info {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.thank-you-info p {
+    font-size: 1.1rem;
+    margin: 10px 0;
+    color: #555;
+}
+
+.thank-you-info p span {
+    font-weight: bold;
+    color: #004d6b;
+}
+
+.thank-you-info .back-to-home {
+    margin-top: 2rem;
+    font-size: 1.2rem;
+}
+
+.thank-you-info .back-to-home a {
+    text-decoration: none;
+    color: #004d6b;
+}
+
+.thank-you-info .back-to-home a:hover {
+    text-decoration: underline;
+}
+.thank-you-info .back-to-home a:visited {
+    color: #004d6b;
+}
+
 footer{
     display: flex;
     justify-content: space-between;
@@ -419,6 +616,35 @@ footer nav a:hover {
         width: 100%; /* Makes all cards take full width */
         max-width: 350px; /* Prevents cards from being too wide */
     }
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .info-container,
+    .spotlight-cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info-container > div,
+    .spotlight-cards > div {
+        width: 100%; /* Makes all cards take full width */
+        max-width: 350px; /* Prevents cards from being too wide */
+    }
+    form {
+        padding: 15px;
+      }
+      
+      .form-group {
+        margin-bottom: 15px;
+      }
+    
+      .card-container {
+        display: block;
+      }
+
 }
 
 @media (min-width: 741px) and (max-width: 1024px) {

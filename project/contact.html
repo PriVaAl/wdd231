@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Soften Your Skills is a digital hub dedicated to soft skills development, offering interactive tutorials, practical exercises, and learning resources to enhance communication, leadership, time management, teamwork, and emotional intelligence.">
+    <meta name="author" content="Priscilla Valverde">
+    <meta property="og:title" content="Soften your Skills">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://privaal.github.io/wdd231/project/images/og-image.png">
+    <meta property="og:url" content="https://privaal.github.io/wdd231/project/index.html">
+    <title> Soften Your Skills Home| Priscilla Valverde | WDD 231 </title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&family=Georgia:wght@700&family=Verdana:wght@400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="favicon.ico" alt="Soften your skills">
+            <h2>Soften Your Skills</h2>
+        </div>    
+        <button id="menu" aria-label="Toggle navigation menu"></button>  
+        <nav >
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>        
+    </header>
+    <section class="intro">
+        <img src="images/hero-image.jpg" alt="Hero image" class="hero-img">
+        <h2 class="banner">Get in contact with your potential.</h2>
+    </section>
+    <br>
+    <br>
+    <main>
+        <h1>Contact us to Soften Your Skills</h1>
+        <section class="container">
+            <form action="thankyou.html" method="GET">
+                <label for="firstName" title="Enter your first name">
+                    First Name:
+                    <input type="text" id="firstName" name="firstName" required autocomplete="given-name" title="Your first name" placeholder="John">
+                </label><br>
+        
+                <label for="lastName" title="Enter your last name">
+                    Last Name:
+                    <input type="text" id="lastName" name="lastName" required autocomplete="family-name" title="Your last name" placeholder="Doe">
+                </label><br>
+        
+                <label for="email">
+                    Email:
+                    <input type="email" id="email" name="email" required placeholder="you@example.com">
+                </label><br>
+
+                <label for="phone" title="Enter your mobile phone number">
+                    Mobile Phone:
+                    <input type="tel" id="phone" name="phone" required autocomplete="tel" title="Your mobile phone number" placeholder="123-456-7890">
+                </label><br>
+        
+                <label for="skills" title="Select the skills you'd like to learn more about">
+                    Skills you'd like to learn more about:
+                    <select name="skills" id="skills" required>
+                        <option value="" disabled selected>Select the skill:</option>  
+                        <option value="communication">Communication</option>
+                        <option value="leadership">Leadership</option>
+                        <option value="problemSolving">Problem-Solving</option>
+                        <option value="timeManagement">Time Management</option>
+                        <option value="emotionalIntelligence">Emotional Intelligence</option>
+                        <option value="awarenessMindset">Awareness & Mindset</option>
+                    </select>
+                </label><br>
+        
+                <label for="resources" title="Select the resources that work best for you">
+                    Preferred Learning Resources:
+                    <select name="resources" id="resources" required>
+                        <option value="" disabled selected>Select the resource</option>  
+                        <option value="video">Video</option>
+                        <option value="pdf">PDF</option>
+                        <option value="class">Class</option>
+                        <option value="tutoring">Tutoring</option>
+                        <option value="book">Book</option>
+                        <option value="tedtalk">TED Talk</option>
+                        <option value="webinar">Webinar</option>
+                    </select>
+                </label><br>
+                <label for="description" title="Describe the skill that you want to learn">
+                    Skill Description:
+                    <textarea name="description" id="description" title="Your skill description"></textarea>
+                </label><br>
+        
+                <!-- Timestamp (Hidden) -->
+                <input type="hidden" name="timestamp" id="timestamp">
+        
+                <!-- Submit Button -->
+                <button type="submit">Submit</button>
+            </form>    
+            <div class="skill-cards">
+                <div class="cardsk" onclick="openModal('communicationModal')">
+                    <h3>Communication</h3>
+                    <p>Click to learn more</p>
+                </div>
+                <div class="cardsk" onclick="openModal('leadershipModal')">
+                    <h3>Leadership</h3>
+                    <p>Click to learn more</p>
+                </div>
+                <div class="cardsk" onclick="openModal('problemSolvingModal')">
+                    <h3>Problem-Solving</h3>
+                    <p>Click to learn more</p>
+                </div>
+                <div class="cardsk" onclick="openModal('timeManagementModal')">
+                    <h3>Time Management</h3>
+                    <p>Click to learn more</p>
+                </div>
+                <div class="cardsk" onclick="openModal('emotionalIntelligenceModal')">
+                    <h3>Emotional Intelligence</h3>
+                    <p>Click to learn more</p>
+                </div>
+                <div class="cardsk" onclick="openModal('awarenessModal')">
+                    <h3>Awareness & Mindset</h3>
+                    <p>Click to learn more</p>
+                </div>
+            </div>            
+            <!-- Modals -->
+            <div id="communicationModal" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal('communicationModal')">&times;</span>
+                    <h2>Communication</h2>
+                    <p>Developing communication skills can improve your clarity, confidence, and connection with others.</p>
+                    <p>Resources available: <strong>Video tutorials, PDFs, live classes, TED Talks, webinars</strong>.</p>
+                </div>
+            </div>
+        
+            <div id="leadershipModal" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal('leadershipModal')">&times;</span>
+                    <h2>Leadership</h2>
+                    <p>Leadership skills empower you to motivate teams and make informed decisions.</p>
+                    <p>Resources available: <strong>Books, online classes, webinars, tutoring</strong>.</p>
+                </div>
+            </div>
+        
+            <div id="problemSolvingModal" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal('problemSolvingModal')">&times;</span>
+                    <h2>Problem-Solving</h2>
+                    <p>Strengthening problem-solving helps you tackle challenges creatively and effectively.</p>
+                    <p>Resources available: <strong>Interactive classes, videos, PDF guides, mentoring</strong>.</p>
+                </div>
+            </div>
+        
+            <div id="timeManagementModal" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal('timeManagementModal')">&times;</span>
+                    <h2>Time Management</h2>
+                    <p>Mastering time management leads to greater productivity and work-life balance.</p>
+                    <p>Resources available: <strong>Workshops, planning books, online videos, tutoring</strong>.</p>
+                </div>
+            </div>
+        
+            <div id="emotionalIntelligenceModal" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal('emotionalIntelligenceModal')">&times;</span>
+                    <h2>Emotional Intelligence</h2>
+                    <p>Understanding emotions improves relationships and decision-making under pressure.</p>
+                    <p>Resources available: <strong>Ted Talks, self-assessments, classes, coaching</strong>.</p>
+                </div>
+            </div>
+        
+            <div id="awarenessModal" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal('awarenessModal')">&times;</span>
+                    <h2>Awareness & Mindset</h2>
+                    <p>Improving mindset boosts motivation and personal resilience.</p>
+                    <p>Resources available: <strong>Mindfulness classes, TED Talks, books, journaling exercises</strong>.</p>
+                </div>
+            </div>
+            
+        </section> 
+               
+   
+    </main>
+
+
+    <footer>
+        <div>
+            <p>Soften Your Skills</p>
+            <p>Curridabat,San José, Costa Rica</p>
+            <p>Phone: (506)8895-4523</p>
+        </div>
+        <nav class="sociallinks">
+            <a href="https://facebook.com">
+                <img src="images/facebook.webp" alt="Facebook">
+            </a>
+            <a href="https://twitter.com">
+                <img src="images/twitter.webp" alt="Twitter">
+            </a>
+            <a href="https://instagram.com">
+                <img src="images/instagram.webp" alt="Instagram">
+            </a>
+        </nav>
+        <div>
+            <p>&copy;<span id="currentYear"></span> Soften Your Skills</p>
+            <p>Developed by Priscilla Valverde | WDD 231</p>
+            <p>Last updated:<span id="lastModified"></span></p>
+        </div>    
+    </footer>
+    <script src="scripts/project.js" defer></script>
+    <script src="scripts/form.js"></script>
+</body>
+</html>

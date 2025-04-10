@@ -33,5 +33,12 @@ export const skills = [
     link: "emotional-intelligence.html",
     image: "images/emotional-intelligence.jpg",
     importance: "Emotional intelligence fosters empathy, communication, and healthy workplace relationships."
+  },
+  {
+    title: "Awareness & Mindset",
+    description: "Cultivate a positive mindset and self-awareness for personal and professional growth.",
+    link: "awareness-mindset.html",
+    image: "images/awareness-mindset.jpg",
+    importance: "Awareness and mindset shape how we approach challenges, decisions, and overall life satisfaction."
   }
 ]

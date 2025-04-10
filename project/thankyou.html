@@ -8,12 +8,10 @@
     <meta property="og:title" content="Soften your Skills">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://privaal.github.io/wdd231/project/images/og-image.png">
-    <meta property="og:url" content="https://privaal.github.io/wdd231/project/resources.html">
-    <title> Soften Your Skills Resources| Priscilla Valverde | WDD 231 </title>
+    <meta property="og:url" content="https://privaal.github.io/wdd231/project/index.html">
+    <title> Soften Your Skills Home| Priscilla Valverde | WDD 231 </title>
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="styles/main.css">
-    <script src="scripts/project.js" defer></script>
-    <script src="scripts/skills.js" type="module"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&family=Georgia:wght@700&family=Verdana:wght@400&display=swap" rel="stylesheet">
@@ -22,40 +20,44 @@
     <header>
         <div class="logo">
             <img src="favicon.ico" alt="Soften your skills">
-            <h2 class="title">Soften Your Skills</h2>
+            <h2>Soften Your Skills</h2>
         </div>    
         <button id="menu" aria-label="Toggle navigation menu"></button>  
         <nav >
             <ul class="navigation">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="skills.html">Skills</a></li>
-                <li><a href="resources.html" class="active"></a>Resources</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
             </ul>
         </nav>        
     </header>
     <section class="intro">
         <img src="images/hero-image.jpg" alt="Hero image" class="hero-img">
-        <h2 class="banner">Empower yourself with better communication, leadership, and emotional intelligence</h2>
-        
+        <h2 class="banner">Thank you for investing on yourself</h2>    
     </section>
     <br>
     <br>
-    <main>
-        <h1>Resources</h1>
-        <section class="site-info" id="allskills">      
-            <div class="resources">
-                <h3>Recommended Resources</h3>
-                <ul>
-                    <li><a href="https://www.mindtools.com/" target="_blank">Mind Tools</a></li>
-                    <li><a href="https://www.coursera.org/" target="_blank">Coursera</a></li>
-                    <li><a href="https://www.udemy.com/" target="_blank">Udemy</a></li>
-                    <li><a href="https://www.skillshare.com/" target="_blank">Skillshare</a></li>
-                    <li><a href="https://www.linkedin.com/learning/" target="_blank">LinkedIn Learning</a></li>
-                </ul>
+    <main> 
+        <h1>Thank You for Joining!</h1>
+        <p>We appreciate your trust and will be in touch soon. Here is the information you submitted:</p>
+        
+        <div id="userDetails" class="thank-you-info">
+            <p><strong>First Name:</strong> <span id="firstNameDisplay"></span></p>
+            <p><strong>Last Name:</strong> <span id="lastNameDisplay"></span></p>
+            <p><strong>Email:</strong> <span id="emailDisplay"></span></p>
+            <p><strong>Phone:</strong> <span id="phoneDisplay"></span></p>
+            <p><strong>Date of Submission:</strong><span id="timestampDisplay"></span></p>
+            <div class="back-to-home">
+                <a href="index.html">Back to Home</a>
             </div>
-        </section>
+        </div>
+        <p>We are excited to have you on board and look forward to helping you enhance your skills.</p>
+        <p>If you have any questions or need further assistance, feel free to reach out to us.</p>
+        <p>Best regards,</p>
+        <p>The Soften Your Skills Team</p>        
     </main>
+
     <footer>
         <div>
             <p>Soften Your Skills</p>
@@ -79,5 +81,7 @@
             <p>Last updated:<span id="lastModified"></span></p>
         </div>    
     </footer>
+    <script src="scripts/project.js" defer></script>
+    <script src="scripts/form.js"defer></script>
 </body>
 </html>
