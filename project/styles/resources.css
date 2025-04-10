@@ -356,14 +356,15 @@ main {
 }
 
 .skills-card p {
-    margin: 5px 0;
+    margin: 10px;
     text-align: center;
+
 }
 
 .skills-card a {
     display: block;
     text-align: center;
-    margin-top: 10px;
+    
     padding: 10px;
     background-color: var(--primary-color);
     color: #fff;

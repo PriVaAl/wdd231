@@ -28,7 +28,7 @@
         "skill": "Time Management",
         "type": "Tutoring/Coaching",
         "company": "Coach.me",
-        "description": "Coach.me provides personalized coaching services to help improve time management skills through one-on-one sessions.",
+        "description": "Coach.me provides personalized coaching services to improve time management skills in one-on-one sessions.",
         "image": "time-management.webp",
         "website": "https://www.coach.me/leadership"
       },
@@ -36,7 +36,7 @@
         "skill": "Emotional Intelligence",
         "type": "Book",
         "company": "Daniel Goleman",
-        "description": "Emotional Intelligence: Why It Can Matter More Than IQ explores the importance of emotional intelligence.",
+        "description": "Emotional Intelligence: Why It Can Matter More Than IQ.",
         "image": "emotional-intelligence.webp",
         "website": "https://www.penguinrandomhouse.com/books/69105/emotional-intelligence-by-daniel-goleman/"
       },
@@ -52,7 +52,7 @@
         "skill": "Communication Skills",
         "type": "Online Course",
         "company": "FutureLearn",
-        "description": "FutureLearn offers a variety of courses to develop communication skills for personal and professional growth, including topics like public speaking, persuasive writing, and team collaboration.",
+        "description": "FutureLearn offers a variety of courses to develop communication skills for personal and professional growth",
         "website": "https://www.futurelearn.com/subjects/business-and-management-courses/communication",
         "image": "comunication-skills.webp"
       },
