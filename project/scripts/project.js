@@ -142,10 +142,11 @@ function displayResources(resources) {
         image.setAttribute("width", "150");
         image.setAttribute("height", "150");
 
-        card.appendChild(image);
+        
         card.appendChild(skill);
         card.appendChild(type);
         card.appendChild(company);
+        card.appendChild(image);
         card.appendChild(description);
         card.appendChild(website);
 
