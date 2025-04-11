@@ -1,0 +1,107 @@
+
+@media only screen and (min-width: 38rem) {
+    header {
+        padding: 15px 30px;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    .navigation {
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    .navigation li {
+        display: inline-block;
+        margin-left: 20px;
+    }
+
+    .navigation a {
+        display: inline-block;
+        padding: 10px;
+    }
+
+    #allskills div {
+        
+        grid-template-areas: 
+        "title ."
+        "image description"
+        "image importance"
+        "button button";
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #allskills div img {
+        width: 300px;
+        
+    }
+    #allskills div button {
+        justify-self: center;
+    }
+   
+}
+
+@media (min-width: 640px) {
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 20px;
+    }
+
+    #menu {
+		display: none; 
+	}
+
+	.navigation {
+        display: flex;
+		flex-direction: row;
+        justify-content: space-around;
+        gap: 20px;
+	}
+
+	.navigation a {
+		display: block;
+        padding: 10px 15px;
+		flex: unset;
+	}
+    
+    
+    .cta-button {
+        font-size: 1rem;
+        padding: 8px 16px;
+    }
+    
+}
+
+@media (max-width: 640px) {
+    footer  {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    footer div {
+        margin-bottom: 10px;
+    }
+
+    .sociallinks {
+        justify-content: center;
+    }
+    #allskills div img:hover {
+        transform: none;
+        filter: none;
+    }
+
+    
+}
+@media only screen and (min-width: 64rem) {
+    #allskills {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    
+     }
+     
+}

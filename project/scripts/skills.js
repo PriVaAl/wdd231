@@ -9,11 +9,11 @@ function displaySkills(skillsList) {
 
       const image = document.createElement('img');
       image.src = `images/${skill.image}`;
-      image.alt = skill.name;
+      image.alt = skill.title;
       image.loading = "lazy";
       card.appendChild(image);
 
-      const title = document.createElement('h2');
+      const title = document.createElement('h3');
       title.innerText = skill.title;
       card.appendChild(title);
 

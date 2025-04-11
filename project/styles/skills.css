@@ -204,6 +204,7 @@ aside {
     font-size: 1.5em;
     margin: 1rem 16px;
     grid-area: title;
+    text-align: center;
 }
 
 #allskills div img {
@@ -240,6 +241,7 @@ aside {
 
 footer{
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
@@ -258,30 +260,24 @@ footer p {
     color: #fff;
 }
 
-.social-links{
+.sociallinks{
     display: flex;
-    gap: 10px;
+    justify-content: center; /* centers icons horizontally */
+    gap: 15px;               /* spacing between icons */
+    margin: 20px 0;
 }
 
-.social-links a {
+.sociallinks a {
     display: inline-block;
     text-decoration: none;
     color: #fff;
+    
+}
+
+.sociallinks img {
+    width: 45px;
+    height: 45px;
     justify-content: center;
-}
-
-.social-links img {
-    width: 25px;
-    height: 25px;
-}
-
-footer nav a {
-    color: #fff; 
-    text-decoration: none;
-}
-
-footer nav a:hover {
-    text-decoration: underline;
 }
 
 #lastModified {
@@ -310,53 +306,6 @@ footer nav a:hover {
 }
 
 
-@media only screen and (min-width: 38rem) {
-    header {
-        padding: 15px 30px;
-    }
 
-    #menu {
-        display: none;
-    }
 
-    .navigation {
-        flex-direction: row;
-        justify-content: flex-end;
-    }
 
-    .navigation li {
-        display: inline-block;
-        margin-left: 20px;
-    }
-
-    .navigation a {
-        display: inline-block;
-        padding: 10px;
-    }
-
-    #allskills div {
-        
-        grid-template-areas: 
-        "title ."
-        "image description"
-        "image importance"
-        "button button";
-        grid-template-columns: auto 1fr;
-    }
-
-    #allskills div img {
-        width: 300px;
-        
-    }
-    #allskills div button {
-        justify-self: center;
-    }
-}
-@media only screen and (min-width: 64rem) {
-    #allskills {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    
-     }
-     
-}

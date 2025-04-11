@@ -1,7 +1,7 @@
 {
     "resources": [
       {
-        "skill": "Communication",
+        "skill": "Communication Skills",
         "type": "Video",
         "company": "LinkedIn Learning",
         "description": "Improve your communication skills with expert-led video courses designed for professionals.",
@@ -9,7 +9,7 @@
         "website": "https://www.linkedin.com/learning/topics/communication"
       },
       {
-        "skill": "Leadership",
+        "skill": "Leadership Skills",
         "type": "Class",
         "company": "Coursera",
         "description": "Leading Teams is an online course focusing on developing effective leadership strategies for managing teams.",
@@ -17,7 +17,7 @@
         "website": "https://www.coursera.org/learn/leading-teams"
       },
       {
-        "skill": "Problem-Solving",
+        "skill": "Problem-Solving Skills",
         "type": "Course",
         "company": "edX",
         "description": "edX offers courses on Problem-Solving and Critical Thinking Skills to enhance analytical and decision-making abilities.",
@@ -25,8 +25,8 @@
         "website": "https://www.edx.org/learn/problem-solving"
       },
       {
-        "skill": "Time Management",
-        "type": "Tutoring/Coaching",
+        "skill": "Time Management Skills",
+        "type": "Coaching",
         "company": "Coach.me",
         "description": "Coach.me provides personalized coaching services to improve time management skills in one-on-one sessions.",
         "image": "time-management.webp",
